@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     
     <meta name="description" content="Ejemplo práctico con el horario DAM/DAW Curso 2022/23"/>
-    <meta name="keywords" content="tabla, formato de tabla, html">
+    <meta name="keywords" content="tabla, formato de tabla, html, css">
     <meta name="language" content="es_ES"> 
     <meta name="author" content="joseantonio.marquez@a.vedrunasevillasj.es">
-    <meta name="revised" content="Friday October 17th, 2022, 8:00pm">
+    <meta name="revised" content="Friday October 23th, 2022, 8:00pm">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
     <meta http-equiv="refresh" content="300"; URL="index.html">
@@ -22,10 +22,10 @@
             border-collapse: collapse;
             margin: 0 auto;
         }
-        thead th {
+        tbody th {
             background-color: navajowhite;
         }
-        tbody th {
+        tbody td:nth-child(1) {
             background-color: gainsboro;
         }
         thead th, tbody td, tbody th {
@@ -39,6 +39,22 @@
             width: 100px;
             height: 50px;
         }
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+        img {
+            display: block;
+            margin: auto;
+        }
 
     </style>
 </head>
@@ -46,7 +62,9 @@
     <h1>Horario DAM/DAW Curso 2022/23</h1>
     <p>Por <a href="https://about.me/josemarquez/" alt="Portafolio info" target="_blank">José Antonio Márquez Flores</a></p>
     
-    <center><a href="https://vedrunasevilla.org/"" target="_blank"><img src="../EjercicioTablas/img/vedruna_logo.webp" alt="Logotipo Vedruna" width="300" height="300"></a></center>
+    <figure class="img">
+        <a href="https://vedrunasevilla.org/" target="_blank"><img src="../EjercicioTablas/img/vedruna_logo.webp" alt="Logotipo Vedruna" width="300" height="300"></a>
+    </figure>
     <p style="text-align:center"><b>Horario DAM/DAW Curso 2022/23</b></p>
     <table>
         <tr>
@@ -60,48 +78,45 @@
         <tr>
             <td>15:00</td>
             <td rowspan="2"><a href="../EjercicioTablas/Base_de_datos/base_de_datos.html">Base de Datos</a></td>
-            <td>Sistemas</td>
-            <td rowspan="2" colspan="2">Programación</td>
-            <td rowspan="2">Marcas</td>
+            <td><a href="../EjercicioTablas/Sistemas/sistemas.html">Sistemas</a></td>
+            <td colspan="2" rowspan="2"><a href="../EjercicioTablas/Programacion/programacion.html">Programación</a></td>
+            <td rowspan="2"><a href="../EjercicioTablas/Marcas/marcas.html">Marcas</a></td>
         </tr>
         <tr>
             <td>15:55</td>
-            <td>Entornos</td>
+            <td><a href="../EjercicioTablas/Entornos/entornos.html">Entornos</a></td>
         </tr>
         <tr>
             <td>16:50</td>
-            <td>FOL</td>
-            <td>Sistemas</td>
-            <td colspan="2">Base de Datos</td>
-            <td>Entornos</td>
+            <td><a href="../EjercicioTablas/FOL/FOL.html">FOL</a></td>
+            <td><a href="../EjercicioTablas/Sistemas/sistemas.html">Sistemas</a></td>
+            <td colspan="2"><a href="../EjercicioTablas/Base_de_datos/base_de_datos.html">Base de Datos</a></td>
+            <td><a href="../EjercicioTablas/Entornos/entornos.html">Entornos</a></td>
         </tr>
         <tr>
             <td>17:45</td>
-            <td colspan="5">Recreo</td>
+            <td colspan="5"><a href="https://www.youtube.com/watch?v=VVPU6fgYZvQ" alt="Link al recreo" target="_blank">Recreo</a></td>
         </tr>
         <tr>
             <td>18:15</td>
-            <td>FOL</td>
-            <td>Sistemas</td>
-            <td colspan="2">Base de Datos</td>
-            <td>Entornos</td>
+            <td><a href="../EjercicioTablas/FOL/FOL.html">FOL</a></td>
+            <td><a href="../EjercicioTablas/Sistemas/sistemas.html">Sistemas</a></td>
+            <td colspan="2"><a href="../EjercicioTablas/Base_de_datos/base_de_datos.html">Base de Datos</a></td>
+            <td><a href="../EjercicioTablas/Entornos/entornos.html">Entornos</a></td>
         </tr>
         <tr>
             <td>19:10</td>
-            <td rowspan="2">Marcas</td>
-            <td rowspan="2">Programación</td>
-            <td rowspan="2">Sistemas</td>
-            <td>FOL</td>
-            <td rowspan="2">Programación</td>
+            <td rowspan="2"><a href="../EjercicioTablas/Marcas/marcas.html">Marcas</a></td>
+            <td rowspan="2"><a href="../EjercicioTablas/Programacion/programacion.html">Programación</a></td>
+            <td rowspan="2"><a href="../EjercicioTablas/Sistemas/sistemas.html">Sistemas</a></td>
+            <td><a href="../EjercicioTablas/FOL/FOL.html">FOL</a></td>
+            <td rowspan="2"><a href="../EjercicioTablas/Programacion/programacion.html">Programación</a></td>
         </tr>
         <tr>
             <td>20:05</td>
-            <td>Sistemas</td>
+            <td><a href="../EjercicioTablas/Sistemas/sistemas.html">Sistemas</a></td>
         </tr>
     </table>
-    <p>Fin de ejercicio</p>
-    <p><a href="../EjercicioImagenes/index.html">Ver ejercicio anterior</a></p>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="../EjercicioTablas/img/button.png" alt="no me pulses" target="blank" width="150px" height="150px"></a>
 </body> 
 
 </html>
