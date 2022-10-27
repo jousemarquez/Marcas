@@ -1,0 +1,28 @@
+fieldset{
+    background-color: #04aa6d2a;
+    width: 600px;
+    margin-top: 10px;
+    padding-block: 10px;
+}
+legend {
+    font-size: 1.3em;
+    background-color: #04aa6dc0;
+    color: white;
+    padding: 5px 10px;
+}
+.select {
+    display:inline;
+}
+select, input {
+display:inline-block;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-size: 1.3em;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
