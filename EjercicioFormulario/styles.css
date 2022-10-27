@@ -14,7 +14,7 @@ legend {
     display:inline;
 }
 select, input {
-display:inline-block;
+    display:inline-block;
 }
 input[type=button], input[type=submit], input[type=reset] {
     background-color: #04AA6D;
