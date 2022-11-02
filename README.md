@@ -1,4 +1,4 @@
-# ![https://quoromtv.com](https://raw.githubusercontent.com/mouredev/mouredev/master/mouredev_emote.png) Hola mundo, mi nombre es José Antonio Márquez pero todo el mundo me llama Jouse ⚔️
+# ![https://quoromtv.com](https://github.com/jousemarquez/Marcas/blob/main/logo-quorom.png) Hola mundo, mi nombre es José Antonio Márquez pero todo el mundo me llama Jouse ⚔️
 ### Estudiante de Desarrollo Web
 ## Me he inspirado en el gran Brais Moure para construir este Readme.md. Puedes ver su canal en ![https://github.com/mouredev]
 
@@ -18,9 +18,9 @@ Autodidacta nato. Devoro contenido que me ayuda a potenciar mi perfil profesiona
 ## Tecnologías:
 
 [![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white&labelColor=101010)]()
-[![HTML](https://img.shields.io/badge/HTML-007396?style=for-the-badge&logo=html&logoColor=white&labelColor=101010)]()
+[![HTML](https://img.shields.io/badge/HTML-E4405F?style=for-the-badge&logo=html&logoColor=white&labelColor=101010)]()
 [![CSS](https://img.shields.io/badge/CSSS-FFCA28?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)]()
-[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white&labelColor=101010)]()
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql)]()
 
 ## Encuéntrame en:
 
@@ -33,7 +33,7 @@ Autodidacta nato. Devoro contenido que me ayuda a potenciar mi perfil profesiona
 ## Siege of Mytra : Asedio de Castillos en la Blockchain
 ![https://siegeofmytra.com/](https://github.com/jousemarquez/Marcas/blob/main/siege%20of%20mytra.png)
 
-Siege of Mytra es un videojuego móvil de estrategia RPG asíncrono basado en la cadena de bloques de WAX. Comanda a tus héroes, construye tu ejército de tropas y mercenarios, asedia los castillos enemigos, obtén recursos y clasifica en el ranking de la comunidad de Siege of Mytra para ganar premios en NFT y tokens de $DOBLON.
+**Siege of Mytra** es un videojuego móvil de estrategia RPG asíncrono basado en la cadena de bloques de [*WAX*](https://on.wax.io/wax-io/). Comanda a tus héroes, construye tu ejército de tropas y mercenarios, asedia castillos enemigos, gana recursos y clasifica en el ranking de la comunidad de Siege of Mytra para conseguir premios en NFT y tokens de $DOBLON.
 
 Disponible la versión de pruebas en **[iOS](https://siegeofmytra.com/testflight)** y **[Android](https://play.google.com/store/apps/details?id=com.onikami.siegeofmytra)**. Sigue los pasos para su instalación en esta guía (en inglés) **[Guía](https://onikami.gitbook.io/som-testnet-guide/)** y aprende todos los detalles del juego en nuestra página web **[Siege of Mytra](https://siegeofmytra.com/)**
 
@@ -45,7 +45,7 @@ Disponible la versión de pruebas en **[iOS](https://siegeofmytra.com/testflight
     <tr>
     <td>
 	<a href="https://youtu.be/rnYLpja9pPM">
-  		<img src="http://i3.ytimg.com/vi/MyzZnIR5gC4/maxresdefault.jpg">
+  		<img src="https://i9.ytimg.com/vi_webp/rnYLpja9pPM/mqdefault.webp?v=62e93077&sqp=CKD_iJsG&rs=AOn4CLBNpwepMTovS89Cn8ow0pOLEwGSHQ">
 	</a>
 	</td>
     <tr>
