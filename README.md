@@ -17,12 +17,11 @@ Autodidacta nato. Devoro contenido que me ayuda a potenciar mi perfil profesiona
 
 ## Tecnologías:
 
-[![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white&labelColor=101010)]()<br>
-**Puedes ver mis repositorios de JAVA en [Github](https://github.com/jousemarquez/Programacion)**
+[![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white&labelColor=101010)]()
 [![HTML](https://img.shields.io/badge/HTML-E4405F?style=for-the-badge&logo=html&logoColor=white&labelColor=101010)]()
-[![CSS](https://img.shields.io/badge/CSSS-FFCA28?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)]()<br>
-**Puedes ver mis repositorios de HTML y CSS en [Github](https://github.com/jousemarquez/Marcas)**<br>
+[![CSS](https://img.shields.io/badge/CSSS-FFCA28?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)]()
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge)]()
+**Puedes ver mis repositorios de [**JAVA**](https://github.com/jousemarquez/Programacion) y [**HTML y CSS**](https://github.com/jousemarquez/Marcas)
 
 ## Encuéntrame en:
 
@@ -32,7 +31,7 @@ Autodidacta nato. Devoro contenido que me ayuda a potenciar mi perfil profesiona
 [![Instagram](https://img.shields.io/badge/Instagram-@quoromtv-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=101010)](https://www.instagram.com/quoromtv)
 [![TikTok](https://img.shields.io/badge/TikTok-@quoromtv-69C9D0?style=for-the-badge&logo=tiktok&logoColor=white&labelColor=101010)](https://www.tiktok.com/@quoromtv)
 
-## Siege of Mytra : Asedio de Castillos en la Blockchain
+## Siege of Mytra: Asedio de Castillos en la Blockchain
 ![https://siegeofmytra.com/](https://github.com/jousemarquez/Marcas/blob/main/siege%20of%20mytra.png)
 
 **Siege of Mytra** es un videojuego móvil de estrategia RPG asíncrono basado en la cadena de bloques de [*WAX*](https://on.wax.io/wax-io/). Comanda a tus héroes, construye tu ejército de tropas y mercenarios, asedia castillos enemigos, gana recursos y clasifica en el ranking de la comunidad de Siege of Mytra para conseguir premios en NFT y tokens de $DOBLON.
