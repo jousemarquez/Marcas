@@ -55,7 +55,7 @@ Disponible la versión de pruebas en **[iOS](https://siegeofmytra.com/testflight
 
 ![https://onikami.com/](https://github.com/jousemarquez/Marcas/blob/main/onikami.png)
 
-Onikami (*oni + kami*) Games surgió en 2013 como el embrión de un estudio independiente de videojuegos. Después de un primer año emocionante, en el que publicamos nuestros primeros trabajos, tuvimos que abandonar el proyecto por motivos profesionales y personales de los 3 miembros del equipo.
+Onikami (*oni + kami*) Games surgió a principios de 2013 como el embrión de un estudio independiente de videojuegos. Después de un primer año emocionante, en el que publicamos nuestros primeros trabajos, tuvimos que abandonar el proyecto por motivos profesionales y personales de los 3 miembros del equipo.
 
 Actualmente trabajamos en el desarrollo de videojuegos en la blockchain con **Siege of Mytra** y en la elaboración de smart contract con fines comerciales.
 
