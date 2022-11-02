@@ -17,10 +17,12 @@ Autodidacta nato. Devoro contenido que me ayuda a potenciar mi perfil profesiona
 
 ## Tecnologías:
 
-[![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white&labelColor=101010)]()
+[![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white&labelColor=101010)]()<br>
+**Puedes ver mis repositorios de JAVA en [Github](https://github.com/jousemarquez/Programacion)**
 [![HTML](https://img.shields.io/badge/HTML-E4405F?style=for-the-badge&logo=html&logoColor=white&labelColor=101010)]()
-[![CSS](https://img.shields.io/badge/CSSS-FFCA28?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)]()
-[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql)]()
+[![CSS](https://img.shields.io/badge/CSSS-FFCA28?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)]()<br>
+**Puedes ver mis repositorios de HTML y CSS en [Github](https://github.com/jousemarquez/Marcas)**<br>
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge)]()
 
 ## Encuéntrame en:
 
@@ -58,6 +60,8 @@ Disponible la versión de pruebas en **[iOS](https://siegeofmytra.com/testflight
 Onikami (*oni + kami*) Games surgió a principios de 2013 como el embrión de un estudio independiente de videojuegos. Después de un primer año emocionante, en el que publicamos nuestros primeros trabajos, tuvimos que abandonar el proyecto por motivos profesionales y personales de los 3 miembros del equipo.
 
 Actualmente trabajamos en el desarrollo de videojuegos en la blockchain con **Siege of Mytra** y en la elaboración de smart contract con fines comerciales.
+
+[![Web](https://img.shields.io/badge/Onikami%20Games-Web%20Oficial-pink?style=for-the-badge)](https://onikami.com/)
 
 ## Contacto y apoyo:
 
