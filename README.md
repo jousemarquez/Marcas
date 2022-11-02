@@ -16,6 +16,7 @@ He estado trabajando los últimos 10 años en la producción de contenidos como 
 Autodidacta nato. Devoro contenido que me ayuda a potenciar mi perfil profesional, por lo que siempre aprendo técnicas o mecánicas nuevas para mejorar mi trabajo.
 
 ## Tecnologías:
+
 [![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white&labelColor=101010)]()
 [![HTML](https://img.shields.io/badge/HTML-007396?style=for-the-badge&logo=html&logoColor=white&labelColor=101010)]()
 [![CSS](https://img.shields.io/badge/CSSS-FFCA28?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)]()
