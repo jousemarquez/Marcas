@@ -1,6 +1,6 @@
-# ![https://quoromtv.com](https://github.com/jousemarquez/Marcas/blob/main/logo-quorom.png) Hola mundo, mi nombre es José Antonio Márquez pero todo el mundo me llama Jouse ⚔️
+# ![https://quoromtv.com](https://github.com/jousemarquez/Marcas/blob/main/logo-quorom.png) Hola mundo, mi nombre es José Antonio Márquez pero todo el mundo me llama Quorom ⚔️
 ### Estudiante de Desarrollo Web
-## Me he inspirado en el gran Brais Moure para construir este Readme.md. Puedes ver su canal en ![https://github.com/mouredev]
+#### Me he inspirado en el gran Brais Moure para construir este Readme.md. Puedes ver su magnífico contenido en [Moure](https://github.com/mouredev)!
 
 
 [![Website](https://img.shields.io/website?down_color=lighgrey&down_message=offline&style=social&up_color=blue&up_message=visit&url=https%3A%2F%2Fquoromtv.com%2F)](https://www.quoromtv.com)
