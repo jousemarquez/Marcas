@@ -1,7 +1,6 @@
-# ![https://quoromtv.com](https://github.com/jousemarquez/Marcas/blob/main/logo-quorom.png) Hola mundo, mi nombre es José Antonio Márquez pero todo el mundo me llama Quorom ⚔️
+# ![https://quoromtv.com](https://github.com/jousemarquez/Marcas/blob/main/logo-quorom.png) Hola mundo, mi nombre es Jouse Márquez pero todo el mundo me llama Quorom ⚔️
 ### Estudiante de Desarrollo Web
 #### Me he inspirado en el gran Brais Moure para construir este Readme.md. Puedes ver su magnífico contenido en [Moure](https://github.com/mouredev)!
-
 
 [![Website](https://img.shields.io/website?down_color=lighgrey&down_message=offline&style=social&up_color=blue&up_message=visit&url=https%3A%2F%2Fquoromtv.com%2F)](https://www.quoromtv.com)
 [![Twitter Follow](https://img.shields.io/twitter/follow/quoromtv?style=social)](https://twitter.com/quoromtv)
@@ -46,7 +45,7 @@ Disponible la versión de pruebas en **[iOS](https://siegeofmytra.com/testflight
     <tr>
     <td>
 	<a href="https://youtu.be/rnYLpja9pPM">
-  		<img src="https://i9.ytimg.com/vi_webp/rnYLpja9pPM/mqdefault.webp?v=62e93077&sqp=CKD_iJsG&rs=AOn4CLBNpwepMTovS89Cn8ow0pOLEwGSHQ">
+  		<img src="https://i9.ytimg.com/vi_webp/rnYLpja9pPM/mqdefault.webp?v=62e93077&sqp=CIzOlZsG&rs=AOn4CLAnKyl375PQvndFEt1NaTy5x5MIQQ">
 	</a>
 	</td>
     <tr>
