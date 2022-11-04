@@ -23,14 +23,7 @@
     <h1><span class="blue"></span>Compatibilidad de medios<span class="blue"></span>
         <h2>Created with <a href="https://bit.ly/3TUbViz">&#9825;</a> by <a href="https://github.com/jousemarquez" target="_blank">José Antonio Márquez</a></h2>
 
-        <ul class="nav">
-            <li><a href="#FormatosVideo">Formatos Vídeo</a></li>
-            <li><a href="#FormatosAudio">Formatos Audio</a></li>
-            <li><a href="#EjemplosVideo">Ejemplos Vídeo</a></li>  
-            <li><a href="#EjemplosAudio">Ejemplos Audio</a></li>
-          </ul>
-        
-        <table class="container" id="#FormatosVideo">
+        <table class="container">
             <caption><h2><a href="https://caniuse.com/?search=video" target="_blank">Formatos de vídeo compatibles</a></h2></caption>
             <thead>
                 <tr>
@@ -62,8 +55,8 @@
                 <tr>
                     <th>AV1</th>
                     <td>Si</td>
-                    <td class=".no">No</td>
-                    <td class=".no">No</td>
+                    <td>No</td>
+                    <td>No</td>
                     <td>Si</td>
                     <td>Si</td>
                 </tr>
@@ -72,8 +65,8 @@
                     <td>Si</td>
                     <td>Si</td>
                     <td>Si</td>
-                    <td class=".no">No</td>
-                    <td class=".no">No</td>
+                    <td>No</td>
+                    <td>No</td>
                 </tr>
                 <tr>
                     <th>MPEG-4</th>
@@ -87,20 +80,34 @@
                     <th>Theora (OGV)</th>
                     <td>Si</td>
                     <td>Si</td>
-                    <td class=".no">No</td>
+                    <td>No</td>
                     <td>Si</td>
                     <td>Si</td>
                 </tr>
                 <tr>
                     <th>AVI</th>
                     <td>Si</td>
-                    <td class=".no">No</td>
+                    <td>No</td>
                     <td>Si</td>
                     <td>Si</td>
                     <td>Si</td>
                 </tr>
             </tbody>
         </table>
+
+        <h2>Ejemplos de Vídeo</a></h2>
+        <div class="mediabox">
+            <p>Video en MP4</p>
+            <video width="720px" height="400px" controls>
+                <source src="../EjercicioCompatibilidades/media/video1.mp4" type="video/mp4">
+            This video is not compatible with your browser.
+            </video>
+            <p>Video en WebM</p>
+            <video width="720px" height="400px" controls>
+                <source src="../EjercicioCompatibilidades/media/video2.webm" type="video/webm">
+            This video is not compatible with your browser.
+            </video>
+        </div>
 
         <table class="container">
             <caption><h2><a href="https://caniuse.com/?search=audio" target="_blank">Formatos de audio compatibles</a></h2></caption>
@@ -134,8 +141,8 @@
                 <tr>
                     <th>AV1</th>
                     <td>Si</td>
-                    <td class=".no">No</td>
-                    <td class=".no">No</td>
+                    <td>No</td>
+                    <td>No</td>
                     <td>Si</td>
                     <td>Si</td>
                 </tr>
@@ -144,8 +151,8 @@
                     <td>Si</td>
                     <td>Si</td>
                     <td>Si</td>
-                    <td class=".no">No</td>
-                    <td class=".no">No</td>
+                    <td>No</td>
+                    <td>No</td>
                 </tr>
                 <tr>
                     <th>MPEG-4</th>
@@ -159,35 +166,41 @@
                     <th>Theora (OGV)</th>
                     <td>Si</td>
                     <td>Si</td>
-                    <td class=".no">No</td>
+                    <td>No</td>
                     <td>Si</td>
                     <td>Si</td>
                 </tr>
                 <tr>
                     <th>AVI</th>
                     <td>Si</td>
-                    <td class=".no">No</td>
+                    <td>No</td>
                     <td>Si</td>
                     <td>Si</td>
                     <td>Si</td>
                 </tr>
             </tbody>
         </table>
-
-        <h2>Ejemplos de Vídeo</a></h2>
-        <div class="mediabox">
-            <video controls><source src="../EjercicioCompatibilidades/media/video1.mp4" type="video/mp4"></video>
-            <video controls><source src="../EjercicioCompatibilidades/media/video2.webm" type="video/webm"></video>
         <h2><a>Ejemplos de Audio</a></h2>
+        <div class="mediabox">
             <p>Audio en MP3</p>
-                <audio controls><source src="../EjercicioCompatibilidades/media/audio.mp3" type="audio/mp3"></audio>
+                <audio controls>
+                    <source src="../EjercicioCompatibilidades/media/audio.mp3" type="audio/mp3">
+                    This video is not compatible with your browser.
+                </audio>
             <p>Audio en OGG</p>
-                <audio controls><source src="../EjercicioCompatibilidades/media/audio.ogg" type="audio/ogg"></audio>
+                <audio controls>
+                    <source src="../EjercicioCompatibilidades/media/audio.ogg" type="audio/ogg">
+                    This video is not compatible with your browser.
+                </audio>
             <p>Audio en WAV</p>
-            <audio controls><source src="../EjercicioCompatibilidades/media/audio.wav" type="audio/wav"></audio>
+            <audio controls>
+                <source src="../EjercicioCompatibilidades/media/audio.wav" type="audio/wav">
+                This video is not compatible with your browser.
+            </audio>
         </div>
 
     <footer>
         <h2>Created with <a href="https://bit.ly/3TUbViz">&#9825;</a> by <a href="https://github.com/jousemarquez" target="_blank">José Antonio Márquez</a></h2>
     </footer>
 </body>
+</html>
