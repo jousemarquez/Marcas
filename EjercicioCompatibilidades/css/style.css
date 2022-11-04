@@ -22,6 +22,19 @@ body {
     background-color:#44567e;
 }
 
+.nav {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+display: inline-block;
+font-size: 20px;
+padding: 20px;
+}
+
 h1 {
     font-size:3em;
     font-weight: 300;
@@ -45,6 +58,15 @@ h2 a {
     text-transform: uppercase;
     color: #FB667A;
     text-decoration: none;
+    padding-top: -0.2em;
+}
+
+h3 {
+    font-size: 0.8em; 
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: #e0fb66;
 }
 
 .container th h1 {
@@ -96,31 +118,30 @@ transition-delay: 0s;
 transition-timing-function: line;
 }
 
-video:hover {
-    transform: translateY(-5px);
-
-    transition-delay: 0s;
-        transition-duration: 0.4s;
-        transition-property: all;
-    transition-timing-function: line;
-}
-
-audio:hover {
-    transform: translateY(-5px);
+.no:hover {
+    background-color: #fa754d;
+    color: #ebeadf;
+    font-weight: bold;
+    
+    box-shadow: #fa754d 6px -6px, #fa754d 5px -5px, #fa754d 4px -4px, #fa754d 3px -3px, #fa754d 2px -2px, #fa754d 1px -1px;
+    transform: translate3d(-6px, 6px, 0);
     
     transition-delay: 0s;
         transition-duration: 0.4s;
         transition-property: all;
     transition-timing-function: line;
-}
+    }
 
 .mediabox {
-    display: block;
-    padding: 0 0 2em 0;
     text-align: center;
     width: 100%;
 }
 
 footer {
     text-align: center;
+    vertical-align: center;
+    min-height: 2em;
+    /*line-height: 2em;*/
+    color:#A7A1AE;
+    background-color: #1F2739;
 }
