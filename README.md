@@ -1,4 +1,4 @@
-# ![https://quoromtv.com](https://github.com/jousemarquez/Marcas/blob/main/logo-quorom.png) Hola mundo, mi nombre es Jouse Márquez pero todo el mundo me llama Quorom ⚔️
+# ![https://quoromtv.com](https://github.com/jousemarquez/jousemarquez/blob/main/media/logo-quorom.png) Hola mundo, mi nombre es Jouse Márquez pero todo el mundo me llama Quorom ⚔️
 ### Estudiante de Desarrollo Web
 #### Me he inspirado en el gran Brais Moure para construir este Readme.md. Puedes ver su magnífico contenido en [Moure](https://github.com/mouredev)!
 
@@ -18,7 +18,7 @@ Autodidacta nato. Devoro contenido que me ayuda a potenciar mi perfil profesiona
 
 [![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white&labelColor=101010)]()
 [![HTML](https://img.shields.io/badge/HTML-E4405F?style=for-the-badge&logo=html&logoColor=white&labelColor=101010)]()
-[![CSS](https://img.shields.io/badge/CSSS-FFCA28?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)]()
+[![CSS](https://img.shields.io/badge/CSS-FFCA28?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)]()
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge)]()<br>
 Puedes ver mis repositorios de [**JAVA**](https://github.com/jousemarquez/Programacion) y [**HTML y CSS**](https://github.com/jousemarquez/Marcas)
 
@@ -31,7 +31,7 @@ Puedes ver mis repositorios de [**JAVA**](https://github.com/jousemarquez/Progra
 [![TikTok](https://img.shields.io/badge/TikTok-@quoromtv-69C9D0?style=for-the-badge&logo=tiktok&logoColor=white&labelColor=101010)](https://www.tiktok.com/@quoromtv)
 
 ## Siege of Mytra: Asedio de Castillos en la Blockchain
-![https://siegeofmytra.com/](https://github.com/jousemarquez/Marcas/blob/main/siege%20of%20mytra.png)
+![https://siegeofmytra.com/](https://github.com/jousemarquez/jousemarquez/blob/main/media/siege%20of%20mytra.png)
 
 **Siege of Mytra** es un videojuego móvil de estrategia RPG asíncrono basado en la cadena de bloques de [*WAX*](https://on.wax.io/wax-io/). Comanda a tus héroes, construye tu ejército de tropas y mercenarios, asedia castillos enemigos, gana recursos y clasifica en el ranking de la comunidad de Siege of Mytra para conseguir premios en NFT y tokens de $DOBLON.
 
@@ -45,7 +45,7 @@ Disponible la versión de pruebas en **[iOS](https://siegeofmytra.com/testflight
     <tr>
     <td>
 	<a href="https://youtu.be/rnYLpja9pPM">
-  		<img src="https://i9.ytimg.com/vi_webp/rnYLpja9pPM/mqdefault.webp?v=62e93077&sqp=CIzOlZsG&rs=AOn4CLAnKyl375PQvndFEt1NaTy5x5MIQQ">
+  		<img src="https://raw.githubusercontent.com/jousemarquez/jousemarquez/main/media/youtube1.webp">
 	</a>
 	</td>
     <tr>
