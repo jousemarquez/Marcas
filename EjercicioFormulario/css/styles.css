@@ -1,3 +1,7 @@
+* {
+    cursor:url(../img/orc.gif), auto;
+}
+
 fieldset{
     background-color: #04aa6d2a;
     width: 600px;
@@ -24,5 +28,4 @@ input[type=button], input[type=submit], input[type=reset] {
     font-size: 1.3em;
     text-decoration: none;
     margin: 4px 2px;
-    cursor: pointer;
 }
