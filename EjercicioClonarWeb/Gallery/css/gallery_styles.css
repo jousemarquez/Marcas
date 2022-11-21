@@ -8,14 +8,14 @@
     margin: 20px;
 }
 
-.gallery div{
+.gallery div {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .gallery div img {
-    width: 420px;
+    width: 50%;
     border: 5px solid red;
     border-radius: 5%;
 }
