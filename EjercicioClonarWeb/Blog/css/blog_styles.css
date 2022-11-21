@@ -17,6 +17,7 @@ section {
 article {
     height: 20%;
     padding: 1.5rem;
+    text-align: justify;
     border: 3px dotted red;
     overflow: auto;
 }
