@@ -79,7 +79,7 @@
     font-weight: bold;
 }
 
-.boton {
+.button {
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
     width: 200px;
@@ -91,7 +91,7 @@
 
 }
 
-.boton:hover{
+.button:hover{
     background-color: white;
     color: black;
     cursor: pointer;
