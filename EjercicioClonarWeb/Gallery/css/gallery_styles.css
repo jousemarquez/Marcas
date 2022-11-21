@@ -1,0 +1,21 @@
+/* Estilo para gallery.html. Ojo, se heredan estilos de index.html*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2em;
+    margin: 20px;
+}
+
+.gallery div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery div img {
+    width: 420px;
+    border: 5px solid red;
+    border-radius: 5%;
+}

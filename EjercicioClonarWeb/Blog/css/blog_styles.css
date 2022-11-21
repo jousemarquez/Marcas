@@ -1,0 +1,26 @@
+/* Estilo para blog.html. Ojo, se heredan estilos de index.html*/
+
+.contenedor-blog {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    margin: 2rem;
+    padding: 0.25rem;
+}
+
+article {
+    height: 20%;
+    padding: 1.5rem;
+    border: 3px dotted red;
+    overflow: auto;
+}
+
+article p {
+    font-size: 1em;
+}

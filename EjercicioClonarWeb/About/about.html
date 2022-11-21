@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ejemplo práctico de clonación de página web propuesta. Página About" />
+    <meta name="keywords" content="about, etiquetas, flex, tablas, html, css">
+    <meta name="language" content="es_ES">
+    <meta name="author" content="joseantonio.marquez@a.vedrunasevillasj.es">
+    <meta name="revised" content="Domingo, 21 de Noviembre de 2022, 8:00pm">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
+    <meta http-equiv="refresh" content="300" ; URL="index.html">
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="css/about_styles.css" rel="stylesheet">
+    <link type="image/x-icon" rel="icon">
+
+    <title>Clonación de página web</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Elementos del Body: Etiquetas semánticas</h1>
+        <h2>Trabajo de Alberto Fernández</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/EjercicioClonarWeb/index.html">HOME</a></li>
+            <li><a href="/EjercicioClonarWeb/Blog/blog.html">BLOG</a></li>
+            <li><a href="/EjercicioClonarWeb/Gallery/gallery.html">GALLERY</a></li>
+            <li><a href="/EjercicioClonarWeb/About/about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenedor-about">
+        <div class="formulario">
+            <h1>Mándanos un correo</h1>
+            <form method="get">
+                <div class="Nombre">
+                    <label for="name">Nombre: </label>
+                    <input type="text" name="name">
+                </div>
+
+                <div class="Telefono">
+                    <label for="telefono">Teléfono de Contacto: </label>
+                    <input type="tel" name="telefono">
+                </div>
+
+                <div class="Correo">
+                    <label for="correo">Correo Electrónico: </label>
+                    <input type="email" name="correo">
+                </div>
+
+                <div class="Asunto">
+                    <label for="Asunto">Asunto: </label>
+                    <input type="text" name="Asunto">
+                </div>
+
+                <div class="Mensaje">
+                    <label for="mensaje">Mensaje: </label>
+                    <p><textarea></textarea></p>
+                </div>
+                <div>
+                    <button class="boton" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="login">
+            <h1>Inicia sesión</h1>
+            <form method="post" action="login.php">
+                <div class="user-login">
+                    <label for="user">Usuario o Correo: </label>
+                    <input type="text" name="user">
+                </div>
+                <div class="pass-login">
+                    <label for="user">Contraseña: </label>
+                    <input type="password" name="pass-login" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener
+                    al menos un número y una mayúscula y una minúscula, y al menos 8 o
+                    más carácteres">
+                </div>
+                <div>
+                    <button class="boton" type="submit">Iniciar Sesión</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="signup">
+            <h1>Regístrate</h1>
+            <form method="post" action="signup.php">
+                <div class="user-register">
+                    <label for="register">Usuario: </label>
+                    <input type="text" name="register">
+                </div>
+                <div class="email-register">
+                    <label for="email-register">Correo Electrónico: </label>
+                    <input type="email" name="email-register">
+                </div>
+                <div class="pass-register">
+                    <label for="pass-register">Contraseña: </label>
+                    <input type="password" name="pass-register" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener
+                    al menos un número y una mayúscula y una minúscula, y al menos 8 o
+                    más carácteres">
+                </div>
+
+                <div class="pass-register">
+                    <label for="pass-register">Confirmar Contraseña: </label>
+                    <input type="password" name="pass-register">
+                </div>
+                <div>
+                    <button class="boton" type="submit">Registrarse</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>§</p>
+        <p>© 2022 <a href="https://drive.google.com/file/d/13D6AVCburMYt-w2VXY13-RcDcaUBEzog/view">Alberto Fernández</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

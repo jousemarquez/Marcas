@@ -1,0 +1,99 @@
+/* Estilo para blog.html*/
+
+.contenedor-about {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    gap: 30px;
+}
+
+.formulario input, .login input, .signup input {
+    height: 30px;
+    width: 200px;
+    border: 3px solid black;
+}
+
+.formulario form{
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 5px solid black;
+    border-radius: 5%;
+    padding: 100px;
+}
+
+.login, .signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin:40px;
+    gap: 30px;
+}
+
+.login form, .signup form {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 5px solid black;
+    border-radius: 5%;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    height: 575px;
+}
+
+.login label, .signup label{
+    display: block;
+    margin-bottom:10px;
+    text-align: center;
+}
+
+.contenedor-about h1 {
+    text-decoration: underline;
+    font-size: 3em;
+    text-align: center;
+}
+
+.formulario textarea{
+    min-width: 500px;
+    min-height: 100px;
+    max-width: 500px;
+    max-height: 500px;
+    border: 3px solid black;
+    overflow: auto;
+}
+
+.formulario div label, .signup div label, .login div label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.boton {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid lightgray;
+
+}
+
+.boton:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s;
+}
