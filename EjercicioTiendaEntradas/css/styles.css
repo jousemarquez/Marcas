@@ -1,0 +1,13 @@
+*{
+    background-color: #1D202B;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;    
+}
+img {
+    border-radius: 15px;
+    max-width: 20%
+    
+}
