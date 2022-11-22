@@ -5,17 +5,17 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     gap: 2em;
-    margin: 20px;
+    margin: 5%;
 }
 
-.gallery div{
+.gallery div {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .gallery div img {
-    width: 420px;
+    width: 60%;
     border: 5px solid red;
     border-radius: 5%;
 }

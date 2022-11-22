@@ -25,10 +25,10 @@
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
-    gap: 30px;
     border: 5px solid black;
     border-radius: 5%;
     padding: 100px;
+    gap: 30px;
 }
 
 .login, .signup {
@@ -50,12 +50,12 @@
     padding: 20px;
     text-align: center;
     width: 400px;
-    height: 575px;
+    height: 600px;
 }
 
 .login label, .signup label{
     display: block;
-    margin-bottom:10px;
+    margin-bottom:2%;
     text-align: center;
 }
 
@@ -66,10 +66,10 @@
 }
 
 .formulario textarea{
-    min-width: 500px;
-    min-height: 100px;
-    max-width: 500px;
-    max-height: 500px;
+    min-width: 400px;
+    min-height: 70px;
+    max-width: 400px;
+    max-height: 70px;
     border: 3px solid black;
     overflow: auto;
 }
@@ -88,7 +88,6 @@
     font-weight: bold;
     text-transform: uppercase;
     border: 2px solid lightgray;
-
 }
 
 .button:hover{
