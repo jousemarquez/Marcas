@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "jousemarquez",
+			"path": "../jousemarquez"
+		},
+		{
+			"name": "Livify",
+			"path": "../Livify"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Marcas"
+	}
+}
