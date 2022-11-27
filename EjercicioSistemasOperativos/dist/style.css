@@ -1,7 +1,48 @@
+/*  
+  Análisis del uso de Sistemas Operativos en ordenadores
+  =========================================
+  Asignatura: Sistemas Informáticos
+  Ejercicio: El mercado de los Sistemas Operativos
+  Autor: https://github.com/jousemarquez
+ */
+
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1em;
+    text-align: center;
+    color: #4DC3FA;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    line-height: 1em;
+    padding-bottom: 2em;
+    color: #FB667A;
+}
+
+h2 a {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FB667A;
+    text-decoration: none;
+    padding-top: -0.2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: white;
+}
+
 html, body {
 	margin: 0 auto;
 	padding: 0 auto;
-	font-family: "Times New Roman", arial, Verdana;
 	color: #817a53;
 	background: #d8d6cb;
 }
