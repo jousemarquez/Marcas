@@ -6,9 +6,11 @@
   Autor: https://github.com/jousemarquez
  */
 
-
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+*{
+    box-sizing: border-box;
+}
 
 h1 {
     font-size: 3em;
@@ -17,7 +19,6 @@ h1 {
     text-align: center;
     color: #4DC3FA;
 }
-
 h2 {
     font-size: 1em;
     font-weight: bold;
@@ -27,7 +28,6 @@ h2 {
     padding-bottom: 2em;
     color: #FB667A;
 }
-
 h2 a {
     font-weight: 700;
     text-transform: uppercase;
@@ -35,58 +35,55 @@ h2 a {
     text-decoration: none;
     padding-top: -0.2em;
 }
-
 h3 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: white;
 }
-
 body {
+    margin: 0;
+    padding: 0;
     background: #1D202B;
-    color: #fff;
     font-family: 'Roboto', sans-serif;
 }
-
 .contenedor {
     display: grid;
     grid-template-columns: 3fr 1fr;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1500px;
+    height: 650px;
     margin: auto;
-    padding: 40px 0;
+    padding: 70px 0;
     gap: 20px;
 }
-
 p {
-    font-size: 24px;
+    font-size: 20px;
     vertical-align: bottom;
 }
-
 .contenedor-conciertos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
-
 .card {
     border-radius: 10px;
-    min-height: 200px;
     font-weight: bold;
-    padding: 20px;
+    padding: 5px;
     position: relative;
     overflow: hidden;
     background-size: cover;
     background-position: center center;
 }
-
 .card .textos {
+    color: white;
     height: 100%;
+    padding-left: 30px;
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
 }
-
 .contenedor-banner {
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -96,16 +93,14 @@ p {
     background-size: cover;
     background-position: center center;
 }
-
 .contenedor-banner ul {
     list-style: none;
+    padding-inline-start: 0px;
 }
-
 .contenedor-banner ul li {
+    font-size: 1.3em;
     margin: 15px;
-    font-weight: bold;
 }
-
 .contenedor-banner .boton {
     background: #FFD600;
     display: block;
@@ -117,9 +112,4 @@ p {
     border: none;
     border-radius: 100px;
     cursor: pointer;
-}
-
-footer {
-    margin-top: 20px;
-    text-align: center;
 }
