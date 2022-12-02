@@ -1,0 +1,8 @@
+h1 {
+    color: greenyellow;
+}
+article {
+    border: 1px red solid;
+    padding: 30px;
+    width: 70vw;
+}

@@ -1,0 +1,10 @@
+h1 {
+    color: red;
+}
+.about {
+    width: 71.15vw;
+    height: auto;
+    background-color: peru;
+    text-align: center;
+    padding: 9vh;
+}

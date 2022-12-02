@@ -1,0 +1,19 @@
+h1 {
+    color: yellow;
+}
+.images {
+    width: 70vw;
+    height: auto;
+    padding: 10px;
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.imagen {
+    background-color: white;
+    width: 20vw;
+    height: 40vh;
+}
