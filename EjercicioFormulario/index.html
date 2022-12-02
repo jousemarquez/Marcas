@@ -1,81 +1,121 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es_ES">
 
-<head> 
+<head>
     <meta charset="UTF-8">
-    <meta name="description" content="Ejemplo práctico sobre tipos de formularios en HTML."/>
+    <meta name="description" content="Ejemplo práctico sobre tipos de formularios en HTML." />
     <meta name="keywords" content="formularios, html, css">
-    <meta name="language" content="es_ES"> 
+    <meta name="language" content="es_ES">
     <meta name="author" content="joseantonio.marquez@a.vedrunasevillasj.es">
     <meta name="revised" content="Friday October 24th, 2022, 8:00pm">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
-    <meta http-equiv="refresh" content="300"; URL="index.html">
+    <meta http-equiv="refresh" content="300" ; URL="index.html">
     <meta name="robots" content="INDEX,FOLLOW" />
     <link rel="stylesheet" href="../EjercicioFormulario/css/styles.css">
     <link rel="icon" type="image/x-icon">
 
-    <title>Formularios</title>   
+    <title>Formularios</title>
 
 </head>
+
 <body>
 
     <img src="../EjercicioFormulario/orc.gif" alt="">
     <h1>Formularios</h1>
-    <p>Por <a href="https://about.me/josemarquez/" alt="Portafolio info" target="_blank">José Antonio Márquez Flores</a></p>
-    
+    <p>Por <a href="https://about.me/josemarquez/" alt="Portafolio info" target="_blank">José Antonio Márquez Flores</a>
+    </p>
+
     <form method="post" autocomplete="on">
         <fieldset>
             <legend class="legend">Datos de cliente</legend>
-                <label for="fname">Nombre:</label>
-                <input type="text" id="fname" placeholder="John"><br/><br/>
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" placeholder="example@example.com"><br/><br/>
-                <label for="phone">Teléfono:</label>
-                <input type="tel" id="phone" name="phone" placeholder="+34-6XX-XXX-XXX" pattern="+34[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{3}"><br/><br/>
+            <label for="fname">Nombre:</label>
+            <input type="text" id="fname" placeholder="John"><br /><br />
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" placeholder="example@example.com"><br /><br />
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+34-6XX-XXX-XXX"
+                pattern="+34[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{3}"><br /><br />
         </fieldset>
         <fieldset>
             <legend>Datos de reserva</legend>
-                <label for="date">Fecha de reserva:</label>
-                <input type="date" id="date" name="date" placeholder="dd/mm/aaaa" min="2022-10-28" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"><br/><br/>
-                <label for="time">Franja Horaria:</label>
-                <div class="select">
-                    <select id="time" name="time">
-                        <option value="00:00--01:00">00:00 -- 01:00</option>
-                        <option value="01:00--02:00">01:00 -- 02:00</option>
-                        <option value="02:00--03:00">02:00 -- 03:00</option>
-                        <option value="03:00--04:00">03:00 -- 04:00</option>
-                        <option value="04:00--05:00">04:00 -- 05:00</option>
-                        <option value="05:00--06:00">05:00 -- 06:00</option>
-                        <option value="06:00--07:00">06:00 -- 07:00</option>
-                        <option value="07:00--08:00">07:00 -- 08:00</option>
-                        <option value="08:00--09:00">08:00 -- 09:00</option>
-                        <option value="09:00--10:00">09:00 -- 10:00</option>
-                        <option value="10:00--11:00">10:00 -- 11:00</option>
-                        <option value="11:00--12:00">11:00 -- 12:00</option>
-                        <option value="12:00--13:00">12:00 -- 13:00</option>
-                        <option value="13:00--14:00">13:00 -- 14:00</option>
-                        <option value="14:00--15:00">14:00 -- 15:00</option>
-                        <option value="15:00--16:00">15:00 -- 16:00</option>
-                        <option value="16:00--17:00">16:00 -- 17:00</option>
-                        <option value="17:00--18:00">17:00 -- 18:00</option>
-                        <option value="18:00--19:00">18:00 -- 19:00</option>
-                        <option value="19:00--20:00">19:00 -- 20:00</option>
-                        <option value="20:00--21:00">20:00 -- 21:00</option>
-                        <option value="21:00--22:00">21:00 -- 22:00</option>
-                        <option value="22:00--23:00">22:00 -- 23:00</option>
-                        <option value="23:00--00:00">23:00 -- 00:00</option>
-                    </select>
-                </div><br/><br/>
+            <label for="date">Fecha de reserva:</label>
+            <input type="date" id="date" name="date" placeholder="dd/mm/aaaa" min="2022-10-28"
+                pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}"><br /><br />
+            <label for="time">Franja Horaria:</label>
+            <div class="select">
+                <select id="time" name="time">
+                    <option value="00:00--01:00">00:00 -- 01:00</option>
+                    <option value="01:00--02:00">01:00 -- 02:00</option>
+                    <option value="02:00--03:00">02:00 -- 03:00</option>
+                    <option value="03:00--04:00">03:00 -- 04:00</option>
+                    <option value="04:00--05:00">04:00 -- 05:00</option>
+                    <option value="05:00--06:00">05:00 -- 06:00</option>
+                    <option value="06:00--07:00">06:00 -- 07:00</option>
+                    <option value="07:00--08:00">07:00 -- 08:00</option>
+                    <option value="08:00--09:00">08:00 -- 09:00</option>
+                    <option value="09:00--10:00">09:00 -- 10:00</option>
+                    <option value="10:00--11:00">10:00 -- 11:00</option>
+                    <option value="11:00--12:00">11:00 -- 12:00</option>
+                    <option value="12:00--13:00">12:00 -- 13:00</option>
+                    <option value="13:00--14:00">13:00 -- 14:00</option>
+                    <option value="14:00--15:00">14:00 -- 15:00</option>
+                    <option value="15:00--16:00">15:00 -- 16:00</option>
+                    <option value="16:00--17:00">16:00 -- 17:00</option>
+                    <option value="17:00--18:00">17:00 -- 18:00</option>
+                    <option value="18:00--19:00">18:00 -- 19:00</option>
+                    <option value="19:00--20:00">19:00 -- 20:00</option>
+                    <option value="20:00--21:00">20:00 -- 21:00</option>
+                    <option value="21:00--22:00">21:00 -- 22:00</option>
+                    <option value="22:00--23:00">22:00 -- 23:00</option>
+                    <option value="23:00--00:00">23:00 -- 00:00</option>
+                </select>
+            </div><br /><br />
             <label for="comensales">Comensales (min 1, max 10):</label>
-            <input type="number" id="comensales" min="1" max="10"><br/><br/>
+            <input type="number" id="comensales" min="1" max="10"><br /><br />
             <label for="color">Color del mantel:</label>
-            <input type="color" id="color"><br/><br/>
-            <label for="demandas">Demandas especiales:</label><br/><br/>
-            <textarea name="demandas" id="demandas" placeholder="alergias, tronas, ..."></textarea><br/><br/>
-            <input type="submit" value="Enviar">
+            <input type="color" id="color"><br /><br />
+            <label for="demandas">Demandas especiales:</label><br /><br />
+            <textarea name="demandas" id="demandas" placeholder="alergias, tronas, ..."></textarea><br />
         </fieldset>
+        <fieldset>
+            <legend>Otros elementos</legend>
+
+            <!-- input de check -->
+            Marca casillas: <br />
+            <input type="checkbox" name="box1" id="box1" value="box1" />
+            <label for="box1">Casilla 1</label><br />
+            <input type="checkbox" name="box2" id="box2" value="box2" />
+            <label for="box2">Casilla 2</label><br />
+
+            <!-- input de elegir una opción -->
+            Marca opciones: <br />
+            <!-- Importante mismo name-->
+            <input type="radio" name="option" id="option1" value="option1" />
+            <label for="option1">Opcion 1</label>
+            <input type="radio" name="option" id="option2" value="option2" />
+            <label for="option2">Opcion 2</label>
+
+            <br />
+
+            <!-- input de seleccionar entre opciones -->
+            <label for="modulo">Selecciona Módulo:</label><br />
+            <select name="modulo" id="modulo">
+                <optgroup label="Informatica">
+                    <option value="dam">DAM</option>
+                    <option value="daw">DAW</option>
+                </optgroup>
+                <optgroup label="Otros">
+                    <option value="cocina">Cocina</option>
+                    <option value="marketing">Marketing</option>
+                </optgroup>
+            </select><br />
+        </fieldset>
+        <!-- botón de resetear valores -->
+        <input type="reset" value="Reset" />
+        <!-- botón de enviar formulario -->
+        <input type="submit" value="Enviar" />
     </form>
-</body> 
+</body>
 
 </html>

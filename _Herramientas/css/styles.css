@@ -1,8 +1,8 @@
 /*  
-  Clonación de página web de venta de entradas musicales
+  Herramientas HTML y CSS
   =========================================
   Asignatura: Lenguajes de Marca
-  Ejercicio: Clonación de página web de venta de entradas musicales
+  Ejercicio: Herramientas HTML y CSS
   Autor: https://github.com/jousemarquez
  */
 
@@ -11,6 +11,8 @@
 
 * {
     box-sizing: border-box;
+    cursor:url(/_Herramientas/img/orc.gif), auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -34,7 +36,7 @@ h2 {
 h2 a {
     font-weight: 700;
     text-transform: uppercase;
-    color: #FB667A;
+    color: #dbfb66;
     text-decoration: none;
     padding-top: -0.2em;
 }
@@ -44,31 +46,32 @@ h3 {
     color: white;
 }
 
+p {
+    font-size: 20px;
+    vertical-align: bottom;
+}
+
 body {
+    height: auto;
     margin: 0;
     padding: 0;
-    background: #1D202B;
-    font-family: 'Roboto', sans-serif;
+    background: #1d202a;
 }
 
 .contenedor {
     display: grid;
     grid-template-columns: 3fr 1fr;
     max-width: 70vw;
-    height: 650px;
+    height: auto;
     margin: auto;
-    padding: 70px 0;
     gap: 20px;
 }
 
-p {
-    font-size: 20px;
-    vertical-align: bottom;
-}
+/* GALERÍA EN GRID */
 
 .contenedor-conciertos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -99,7 +102,7 @@ p {
     justify-content: space-between;
     border-radius: 10px;
     text-align: center;
-    padding: 20px;
+    /*padding: 20px;*/
     background-size: cover;
     background-position: center center;
 }
@@ -125,4 +128,35 @@ p {
     border: none;
     border-radius: 100px;
     cursor: pointer;
+}
+
+/* BOTONERAS */
+/* GRÁFICO SIMPLE*/
+
+.pie-chart {
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    background: conic-gradient( 
+        gainsboro 6deg, goldenrod 6deg 18deg, blueviolet 18deg 45deg, 
+        gainsboro 45deg 110deg, goldenrod 110deg 200deg, blueviolet 200deg);
+    border-radius: 50%;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: #14151b;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    color: #dbfb66;
+    text-decoration: none;
 }
