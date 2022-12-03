@@ -1,0 +1,45 @@
+/*  
+  Ejercicio de Tipografías
+  =========================================
+  Asignatura: Lenguajes de Marca
+  Ejercicio: Ejercicio de Tipografías
+  Autor: https://github.com/jousemarquez
+ */
+
+@charset "UTF-8";
+
+* { box-sizing: border-box;}
+
+html{
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    width: 1100px;
+    height: 266px;
+    margin: 0 auto;
+}
+h1 {
+    font-family: Cambria, 'Times New Roman', serif;
+    color: #1f497d;
+    background-color: #bfbfbf;
+    font-size: 24px;
+    letter-spacing: 0.5em;
+    word-spacing: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: Cambria, 'Times New Roman', serif;
+    color: #632423;
+    font-size: 18px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+ul {
+    font-style: oblique;
+    font-weight: bold;
+}
+strong {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant-caps: small-caps;
+    font-style: normal;
+    font-weight: normal;
+}
