@@ -66,7 +66,7 @@ body {
 .contenedor {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    max-width: 70vw;
+    max-width: 80vw;
     height: auto;
     margin: auto;
     gap: 20px;
@@ -142,7 +142,10 @@ body {
     margin: 0 auto;
     width: 400px;
     height: 400px;
-    background: conic-gradient(gainsboro 20deg, goldenrod 20deg 150deg, blueviolet 150deg 200deg);
+    background: conic-gradient(
+    gainsboro 20deg,
+    goldenrod 20deg 150deg,
+    blueviolet 150deg 200deg);
     border-radius: 50%;
 }
 
