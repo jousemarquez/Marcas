@@ -1,0 +1,195 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700);
+
+* {
+    box-sizing: border-box;
+    cursor: url(../img/pokeball.cur), auto;
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    color: white;
+    font-size: 1.7em;
+    font-weight: 700;;
+    align-items: center;
+    margin: auto;
+    padding-top: 10px;
+}
+h2 {
+    color: black;
+    font-size: 1.5em;
+    font-weight: 400;
+    align-items: center;
+}
+h3 {
+    color: black;
+    font-size: 1em;
+    font-weight: 300;
+    align-items: center;
+    margin: auto;
+    padding-top: 10px;
+}
+h4 {
+    color: black;
+    font-size: 0.9em;
+    font-weight: 200;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 10px;
+}
+p{
+    color: white;
+}
+header {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    position: fixed;
+    z-index: 1;
+}
+main a {
+    position: absolute;
+    margin-left: 10px;
+    rotate: -90deg;
+    scale: 60%;
+}
+main a:hover {
+    transform: scale(120%);
+}
+header h1 {
+    text-align: center;
+    margin-right: 0 auto;
+}
+body {
+    padding: 0;
+    margin: 0 auto;
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    background-size: 100% 220% 220% 220%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 5%;
+}
+.container div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.card {
+    background-color: white;
+    width: 320px;
+    height: 530px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.281);
+    border-radius: 15px 15px 15px 15px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+}
+.img {
+    background: url("../img/fondoverde.jpg");
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+.aureola {
+    background-color: rgb(162, 248, 123);
+    border-radius: 50%;
+    border: solid green;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+.linea {
+    width: 100%;
+    height: 2px;
+    background-color: #77cc55;
+}
+.pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+.coleccionable {
+    width: 100%;
+}
+.caracteristicas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    width: 100%;
+}
+.caracteristicas img {
+    width: 30px;
+    height: 30px;
+}
+.poder{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.resistencia{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bonus{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+footer {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    color: white;
+}
+footer a {
+    color: #dbfb66;
+    text-decoration: none;
+}

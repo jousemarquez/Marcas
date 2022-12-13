@@ -4,22 +4,40 @@
     Asignatura: Lenguajes de Marca
     Ejercicio: Práctica Pokémon
     Autor: https://github.com/jousemarquez
- */
+    */
 
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700);
 
 * {
     box-sizing: border-box;
     cursor: url(../img/pokeball.cur), auto;
     font-family: 'Roboto', sans-serif;
 }
-
+h1 {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;;
+    align-items: center;
+    margin: auto;
+    padding-top: 10px;
+}
+h2 {
+    color: black;
+    font-size: 1em;
+    font-weight: 400;
+    align-items: center;
+    margin: auto;
+    padding-top: 10px;
+}
+p {
+    color: white;
+}
 header {
     background-color: #14151b;
     top: 0;
     width: 100%;
-    height: 70px;
+    height: 50px;
     text-align: center;
     position: absolute;
     position: fixed;
@@ -31,10 +49,16 @@ body {
     background-size: 16px 16px;
     height: auto;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
-main {
-    margin: 0 auto;
+.container {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
 }
 .imagenes {
     display: grid;
@@ -43,55 +67,15 @@ main {
     gap: 2em;
     margin: 5%;
 }
-.imagenes div{
+.imagenes div {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.imagenes div img{
+.imagenes div img {
     width: 100px;
     height: 100px;
     border-radius: 100%;
-}
-.pokemonplanta{
-    background-color: rgb(162, 248, 123);
-    border: solid green;
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-}
-.pokemonfuego{
-    background-color: rgb(243, 202, 139);
-    border: solid orange;
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-}
-.pokemonagua{
-    background-color: rgb(132, 204, 245);
-    border: solid rgb(54, 111, 218);
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-}
-.pokemonfantasma{
-    background-color: rgb(194, 125, 240);
-    border: solid purple;
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-}
-p {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-}
-body {
-    padding: 0;
-    margin: 0;
-}
-.cards {
-    display: flex;
-    gap: 10%
 }
 .card {
     background-color: white;
@@ -106,7 +90,7 @@ body {
     margin: auto;
 }
 .card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 .img {
     background: url("../img/pokeball1.png");
@@ -122,21 +106,42 @@ body {
     margin: auto;
     justify-content: space-around;
 }
-.pkmn{
+.pokemon {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
     scale: 120%;
+    object-fit: fill;
 }
-.texto{
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.4em;
+.plant {
+    background-color: #ddedd7;
+    border: 4px solid #77cc55;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin: auto;
-    padding-top: 10px;
-}  
+}
+.fire {
+    background-color: #e6d1ce;
+    border: 4px solid #fa4323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.water {
+    background-color: #d3dde6;
+    border: 4px solid #3399ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ghost {
+    background-color: #c2c2da;
+    border: 4px solid #6565ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 footer {
     width: 100%;
     height: 50px;
@@ -146,11 +151,9 @@ footer {
     position: absolute;
     position: fixed
 }
-
 footer p {
     color: white;
 }
-
 footer a {
     color: #dbfb66;
     text-decoration: none;
