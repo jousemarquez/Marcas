@@ -1,32 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.form {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     padding: 0;
     margin: 0 auto;
 }
 
-fieldset{
-    background-color: #007fc390;
+fieldset {
+    background-color: white;
     width: 600px;
     margin-top: 10px;
     padding-block: 10px;
 }
+
 legend {
-    font-size: 1.3em;
+    font-size: 1em;
+    font-weight: bold;
     background-color: #0080c3;
     color: white;
     padding: 5px 10px;
+    width: 100%;
+    text-align: center;
 }
+
 .select {
-    display:inline;
+    display: inline;
 }
-select, input {
-    display:inline-block;
+
+select,
+input {
+    display: inline-block;
 }
-input[type=button], input[type=submit], input[type=reset] {
-    background-color: #0080c3;
+
+input[type=button],
+input[type=submit],
+input[type=reset] {
+    background-color: rgb(60, 164, 46);
     border: none;
     color: white;
-    padding: 16px 32px;
-    font-size: 1.3em;
+    padding: 12px 28px;
+    font-size: 1em;
     text-decoration: none;
     margin: 4px 2px;
+    font-weight: bold;
 }

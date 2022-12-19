@@ -39,23 +39,35 @@
     <form method="get" autocomplete="on">
         <fieldset>
             <legend class="legend">TUS DATOS</legend>
-            <label for="fname">Nombre:</label>
+            <label for="fname">
+                <p>Nombre:</p>
+            </label>
             <input type="text" id="fname" placeholder="Tu Nombre">
-            <label for="subject">Asunto:</label>
+            <label for="subject">
+                <p>Asunto:</p>
+            </label>
             <input type="text" id="subject" placeholder="Tu Asunto">
-            <label for="email">E-mail:</label>
+            <label for="email">
+                <p>E-mail</p>
+            </label>
             <input type="email" id="email" placeholder="Tu Email">
-            <label for="phone">Teléfono:</label>
+            <label for="phone">
+                <p>Teléfono:</p>
+            </label>
             <input type="tel" id="phone" name="phone" placeholder="Tu Teléfono"
                 pattern="+34[0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{3}">
-            <label for="message">Tu Mensaje:</label>
+            <label for="message">
+                <p>Tu Mensaje:</p>
+            </label>
             <textarea name="demandas" id="message" placeholder=""></textarea>
         </fieldset>
         <!-- Segunda parte del formulario-->
         <fieldset>
             <legend class="legend">PAÍS</legend>
-            <label for="country">País:</label>
-            <div class="select">
+            <label for="country">
+                <p>País:</p>
+            </label>
+            <div class="select" >
                 <select id="country" name="country">
                     <option value="Mexico">México</option>
                     <option value="Peru">Perú</option>
@@ -69,11 +81,13 @@
         <!-- Tercenar parte del formulario-->
         <fieldset>
             <legend>INFORMACIÓN EXTRA</legend>
-            <input type="checkbox" name="customer" id="customer" value="customer"/>
-            <label for="customer">Cliente</label>
-            <input type="checkbox" name="supplier" id="supplier" value="supplier"/>
-            <label for="supplier">Proveedor</label>
-            <label for="country">Categoría de Interés:</label>
+            <label for="customer">Cliente:</label>
+            <input type="radio" name="extrainfo" id="customer" value="customer" />
+            <label for="supplier">Proveedor:</label>
+            <input type="radio" name="extrainfo" id="supplier" value="supplier" />
+            <label for="country">
+                <p>Categoría de Interés:</p>
+            </label>
             <div class="category">
                 <select id="category" name="category">
                     <option value="Cocina">Cocina</option>
@@ -83,9 +97,11 @@
                     <option value="Baños">Baños</option><!-- No se ve en el vídeo-->
                 </select>
             </div>
-            <!-- botón de enviar formulario -->
-            <input onClick="alert('¡Gracias por enviar el formulario! Nuestro equipo lo está revisando y será contestado en un máximo de 24 horas.')" type="submit" value="ENVIAR FORMULARIO"/>
         </fieldset>
+        <!-- botón de enviar formulario -->
+        <input
+            onClick="alert('¡Gracias por enviar el formulario! Nuestro equipo lo está revisando y será contestado en un máximo de 24 horas.')"
+            type="submit" value="ENVIAR FORMULARIO" />
     </form>
     <footer>
         <div class="footer_nav">
