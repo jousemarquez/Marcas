@@ -1,0 +1,8 @@
+.panel {
+    margin: 30px 30px;
+    background-color: transparent !important;
+}
+
+.panel_texto p {
+    color: black !important;
+}
