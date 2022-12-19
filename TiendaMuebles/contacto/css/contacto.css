@@ -9,6 +9,10 @@ body {
     margin: 0 auto;
 }
 
+form {
+    margin: 0 auto;
+}
+
 fieldset {
     background-color: white;
     width: 600px;

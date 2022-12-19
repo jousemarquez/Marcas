@@ -67,7 +67,7 @@
             <label for="country">
                 <p>País:</p>
             </label>
-            <div class="select" >
+            <div class="select">
                 <select id="country" name="country">
                     <option value="Mexico">México</option>
                     <option value="Peru">Perú</option>
@@ -88,14 +88,14 @@
             <label for="country">
                 <p>Categoría de Interés:</p>
             </label>
-            <div class="category">
-                <select id="category" name="category">
-                    <option value="Cocina">Cocina</option>
-                    <option value="Exterior">Exterior</option>
-                    <option value="Recamara">Recámaras</option>
-                    <option value="Oficina">Oficina</option>
-                    <option value="Baños">Baños</option><!-- No se ve en el vídeo-->
-                </select>
+            <input list="categorias" name="categorias">
+            <datalist id="categorias">
+                <option value="Cocina">
+                <option value="Exterior">
+                <option value="Recamaras">
+                <option value="Oficina">
+                <option value="Televisión">
+            </datalist>
             </div>
         </fieldset>
         <!-- botón de enviar formulario -->
