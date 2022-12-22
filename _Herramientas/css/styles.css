@@ -684,18 +684,25 @@ input[type="radio"] {
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    gap: 10px;
 }
 
 .calculator-grid>button {
     cursor: pointer;
     font-size: 2rem;
-    border: 1px solid white;
+    border: 1px solid rgb(83, 75, 75);
     outline: none;
+    border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.75);
 }
 
+.special-button {
+    background-color: rgba(48, 47, 47, 0.75);
+}
+
+
 .calculator-grid>button:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 .doubled-grid {
@@ -704,7 +711,7 @@ input[type="radio"] {
 
 .output {
     grid-column: 1 / -1;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgb(87, 84, 84);
     display: flex;
     align-items: flex-end;
     justify-content: space-around;

@@ -13,7 +13,7 @@ class Calculator {
         this.currentOperand = this.currentOperand.toString().slice(0, -1);
     }
     appendNumber(number) {
-        if (number === '.' && this.currentOperand.includes('.')) {
+        if (number === '.' && this.currentOperand.includes(',')) {
             return;
         }
         this.currentOperand = this.currentOperand.toString() + number.toString();
@@ -37,15 +37,20 @@ class Calculator {
             return;
         }
         switch (this.operation) {
-            case '+': computation = prev + current;
+            case '+':
+                computation = prev + current;
                 break;
-            case '-': computation = prev - current;
+            case '-':
+                computation = prev - current;
                 break;
-            case '*': computation = prev * current;
+            case '*':
+                computation = prev * current;
                 break;
-            case '÷': computation = prev / current;
+            case '÷':
+                computation = prev / current;
                 break;
-            default: return;
+            default:
+                return;
         }
         this.currentOperand = computation.toFixed(2);
         this.operation = null;

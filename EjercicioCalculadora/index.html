@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Crear una calculadora con HTML, CSS y Js" />
+    <meta name="keywords" content="calculadora, html, css, js, grid, flex">
+    <meta name="language" content="es_ES">
+    <meta name="author" content="joseantonio.marquez@a.vedrunasevillasj.es">
+    <meta name="revised" content="Jueves, 22 de Diciembre de 2022, 9:00pm">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
+    <meta http-equiv="refresh" content="300" ; URL="index.html">
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <link href="css/styles.css" rel="stylesheet">
+    <link type="image/x-icon" rel="icon">
+    <script type="text/javascript" src="js/calculadora.js" defer></script>
+
+    <title>Calculadora</title>
+
+</head>
+
+<body>
+    <header>
+        <hgroup>
+            <h1><span class="blue"></span>Calculadora<span class="blue"></span>
+                <h2>Created with <a href="https://bit.ly/3TUbViz">&#9825;</a> by <a
+                        href="https://github.com/jousemarquez" target="_blank">Jouse Márquez</a></h2>
+        </hgroup>
+    </header>
+    <main>
+
+        <form action="get" id="calculator" autocomplete="on">
+
+
+
+        </form>
+
+
+
+        <div class="calculator-grid">
+            <div class="output">
+                <div data-previous-operand class="first-operand"></div>
+                <div data-current-operand class="second-operand"></div>
+            </div>
+            <button data-all-clear class="doubled-grid" class="special-button">AC</button>
+            <button data-delete class="special-button" class="special-button">DEL</button>
+            <button data-operation class="special-button">/</button>
+            
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation class="special-button">*</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation class="special-button">+</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation class="special-button">-</button>
+            <button data-number class="special-button">.</button>
+            <button data-number>0</button>
+            <button data-equals class="doubled-grid" class="special-button">=</button>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2022 | <a href="https://github.com/jousemarquez">Jouse Márquez</a></p>
+    </footer>
+</body>
+
+</html>

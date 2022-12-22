@@ -1,0 +1,173 @@
+/*  
+  Calculadora
+  =========================================
+  Asignatura: Lenguajes de Marca
+  Ejercicio: Crear una calculadora con HTML, CSS y Js
+  Autor: https://github.com/jousemarquez
+ */
+
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1em;
+    text-align: center;
+    color: #4DC3FA;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    line-height: 1em;
+    color: #FB667A;
+}
+
+h2 a {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #dbfb66;
+    text-decoration: none;
+    padding-top: -0.2em;
+    cursor: url(../img/orc.gif), auto;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    vertical-align: bottom;
+}
+
+header hgroup {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 10vh;
+    background-color: #14151b;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 0px;
+}
+
+body {
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    background: #1d202a;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    padding: 30px 30px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    max-width: 80vw;
+    height: auto;
+    margin: auto;
+    gap: 20px;
+}
+
+/* CALCULADORA */
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    /* Requisito */
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    gap: 10px;
+}
+
+.calculator-grid>button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid rgb(83, 75, 75);
+    outline: none;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.special-button {
+    background-color: rgba(48, 47, 47, 0.75);
+}
+
+
+.calculator-grid>button:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+    cursor: url(../img/orc.gif), auto;
+}
+
+.doubled-grid {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgb(87, 84, 84);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    background-image: url(../img/calculation-math.gif);
+    object-fit: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.output .first-operand {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+}
+
+.output .second-operand {
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 10vh;
+    background-color: #14151b;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0px;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    color: #dbfb66;
+    text-decoration: none;
+}
