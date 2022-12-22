@@ -20,7 +20,7 @@ Autodidacta nato. Devoro contenido que me ayuda a potenciar mi perfil profesiona
 [![HTML](https://img.shields.io/badge/HTML-E4405F?style=for-the-badge&logo=html&logoColor=white&labelColor=101010)]()
 [![CSS](https://img.shields.io/badge/CSS-FFCA28?style=for-the-badge&logo=css&logoColor=white&labelColor=101010)]()
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge)]()<br>
-Puedes ver mis repositorios de [**JAVA**](https://github.com/jousemarquez/Programacion) y [**HTML y CSS**](https://github.com/jousemarquez/Marcas)
+Puedes ver mis repositorios de [**JAVA**](https://github.com/jousemarquez/Java) y [**HTML y CSS**](https://github.com/jousemarquez/Marcas)
 
 ## Encuéntrame en:
 
