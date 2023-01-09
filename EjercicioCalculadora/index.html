@@ -14,9 +14,9 @@
     <meta name="robots" content="INDEX,FOLLOW" />
     <link href="css/styles.css" rel="stylesheet">
     <link type="image/x-icon" rel="icon">
-    <script type="text/javascript" src="js/calculadora.js" defer></script>
+    <script type="text/javascript" src="./js/calculadora.js" defer></script>
 
-    <title>Calculadora</title>
+    <title>Práctica de Calculadora</title>
 
 </head>
 
@@ -29,31 +29,41 @@
         </hgroup>
     </header>
     <main>
-        <div class="calculator-grid">
-            <div class="output">
-                <div data-previous-operand class="first-operand"></div>
-                <div data-current-operand class="second-operand"></div>
-            </div>
-            <button data-all-clear class="doubled-grid" class="special-button">AC</button>
-            <button data-delete class="special-button" class="special-button">DEL</button>
-            <button data-operation class="special-button">/</button>
-            
-            <button data-number>7</button>
-            <button data-number>8</button>
-            <button data-number>9</button>
-            <button data-operation class="special-button">*</button>
-            <button data-number>4</button>
-            <button data-number>5</button>
-            <button data-number>6</button>
-            <button data-operation class="special-button">+</button>
-            <button data-number>1</button>
-            <button data-number>2</button>
-            <button data-number>3</button>
-            <button data-operation class="special-button">-</button>
-            <button data-number class="special-button">.</button>
-            <button data-number>0</button>
-            <button data-equals class="doubled-grid" class="special-button">=</button>
-        </div>
+        <form id="calculator">
+            <fieldset>
+                <p id="ans"></p>
+            </fieldset>
+            <fieldset>
+                <button id="(" onclick="ans.innerHTML+=`(`">(</button>
+                <button id=")" onclick="ans.innerHTML+=`)`">)</button>
+                <button id="C" onclick="document.querySelector('#ans').innerHTML = '' ">C</button>
+                <button id="^" onclick="ans.innerHTML+=`^`">^</button>
+            </fieldset>
+            <fieldset>
+                <button id="7" onclick="ans.innerHTML+=`7`">7</button>
+                <button id="8" onclick="ans.innerHTML+=`8`">8</button>
+                <button id="9" onclick="ans.innerHTML+=`9`">9</button>
+                <button id="*" onclick="ans.innerHTML+=`*`">*</button>
+            </fieldset>
+            <fieldset>
+                <button id="4" onclick="ans.innerHTML+=`4`">4</button>
+                <button id="5" onclick="ans.innerHTML+=`5`">5</button>
+                <button id="6" onclick="ans.innerHTML+=`6`">6</button>
+                <button id="-" onclick="ans.innerHTML+=`-`">-</button>
+            </fieldset>
+            <fieldset>
+                <button id="1" onclick="ans.innerHTML+=`1`">1</button>
+                <button id="2" onclick="ans.innerHTML+=`2`">2</button>
+                <button id="3" onclick="ans.innerHTML+=`3`">3</button>
+                <button id="+" onclick="ans.innerHTML+=`+`">+</button>
+            </fieldset>
+            <fieldset>
+                <button id="%" onclick="ans.innerHTML+=`%`">%</button>
+                <button id="0" onclick="ans.innerHTML+=`0`">0</button>
+                <button id="." onclick="ans.innerHTML+=`.`">.</button>
+                <button id="=" onclick="document.querySelector('#ans').innerHTML = eval(document.querySelector('#ans').innerHTML)">=</button>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <p>&copy; 2022 | <a href="https://github.com/jousemarquez">Jouse Márquez</a></p>
