@@ -34,34 +34,34 @@
                 <p id="ans"></p>
             </fieldset>
             <fieldset>
-                <button id="(" onclick="ans.innerHTML+=`(`">(</button>
-                <button id=")" onclick="ans.innerHTML+=`)`">)</button>
-                <button id="C" onclick="document.querySelector('#ans').innerHTML = '' ">C</button>
-                <button id="^" onclick="ans.innerHTML+=`^`">^</button>
+                <input type="button" value="(" onclick="ans.innerHTML+=`(`">
+                <input type="button" value=")" onclick="ans.innerHTML+=`)`">
+                <input type="button" value="C" onclick="document.querySelector('#ans').innerHTML = '' ">
+                <input type="button" value="^" onclick="ans.innerHTML+=`^`">
             </fieldset>
             <fieldset>
-                <button id="7" onclick="ans.innerHTML+=`7`">7</button>
-                <button id="8" onclick="ans.innerHTML+=`8`">8</button>
-                <button id="9" onclick="ans.innerHTML+=`9`">9</button>
-                <button id="*" onclick="ans.innerHTML+=`*`">*</button>
+                <input type="button" value="7" onclick="ans.innerHTML+=`7`">
+                <input type="button" value="8" onclick="ans.innerHTML+=`8`">
+                <input type="button" value="9" onclick="ans.innerHTML+=`9`">
+                <input type="button" value="*" onclick="ans.innerHTML+=`*`">
             </fieldset>
             <fieldset>
-                <button id="4" onclick="ans.innerHTML+=`4`">4</button>
-                <button id="5" onclick="ans.innerHTML+=`5`">5</button>
-                <button id="6" onclick="ans.innerHTML+=`6`">6</button>
-                <button id="-" onclick="ans.innerHTML+=`-`">-</button>
+                <input type="button" value="4" onclick="ans.innerHTML+=`4`">
+                <input type="button" value="5" onclick="ans.innerHTML+=`5`">
+                <input type="button" value="6" onclick="ans.innerHTML+=`6`">
+                <input type="button" value="-" onclick="ans.innerHTML+=`-`">
             </fieldset>
             <fieldset>
-                <button id="1" onclick="ans.innerHTML+=`1`">1</button>
-                <button id="2" onclick="ans.innerHTML+=`2`">2</button>
-                <button id="3" onclick="ans.innerHTML+=`3`">3</button>
-                <button id="+" onclick="ans.innerHTML+=`+`">+</button>
+                <input type="button" value="1" onclick="ans.innerHTML+=`1`">
+                <input type="button" value="2" onclick="ans.innerHTML+=`2`">
+                <input type="button" value="3" onclick="ans.innerHTML+=`3`">
+                <input type="button" value="+" onclick="ans.innerHTML+=`+`">
             </fieldset>
             <fieldset>
-                <button id="%" onclick="ans.innerHTML+=`%`">%</button>
-                <button id="0" onclick="ans.innerHTML+=`0`">0</button>
-                <button id="." onclick="ans.innerHTML+=`.`">.</button>
-                <button id="=" onclick="document.querySelector('#ans').innerHTML = eval(document.querySelector('#ans').innerHTML)">=</button>
+                <input type="button" value="%" onclick="ans.innerHTML+=`%`">
+                <input type="button" value="0" onclick="ans.innerHTML+=`0`">
+                <input type="button" value="." onclick="ans.innerHTML+=`.`">
+                <input type="button" value="=" onclick="document.querySelector('#ans').innerHTML = eval(document.querySelector('#ans').innerHTML)">
             </fieldset>
         </form>
     </main>

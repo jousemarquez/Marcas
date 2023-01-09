@@ -100,13 +100,14 @@ main {
 #ans {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     height: 10vh;
     width: 270px;
     color: black;
     border: 1px solid black;
     background-color: white;
-    font-size: 4rem;
+    font-size: 3rem;
+    max-width: 100%;
     padding: 0.75rem;
     margin-top: 2rem;
 }
@@ -135,7 +136,7 @@ fieldset:nth-child(1) {
     height: 23vh;
 }
 
-button {
+input[type=button] {
     width: 3rem;
     height: 3rem;
     font-size: 2rem;
@@ -144,7 +145,7 @@ button {
     color:white;
 }
 
-button:hover {
+input:hover[type=button] {
     cursor:pointer;
     color:black;;
     background-color: white;
