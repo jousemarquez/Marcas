@@ -81,6 +81,10 @@ main {
     gap: 20px;
 }
 
+.bloque {
+    height: 120vh;
+}
+
 /* GALERÍA EN GRID */
 
 .contenedor-conciertos {
@@ -731,6 +735,29 @@ input[type="radio"] {
     font-size: 2.5rem;
 }
 
+/* TROLEO */
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 120px;
+    font-weight: bold;
+    height: 50px;
+    transition: 0.08s;
+    border: none;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 40px 5px;
+}
+
 /* FOOTER */
 
 footer {
@@ -742,7 +769,7 @@ footer {
     text-align: center;
     justify-content: center;
     position: relative;
-    bottom: 0px;
+    bottom: 0px !important;
 }
 
 footer p {
