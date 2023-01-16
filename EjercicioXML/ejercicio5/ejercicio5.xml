@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="styles.css"?>
+
+<!-- Ejercicio 5:
+Realizar un documento XML, y un CSS vinculado, que dé como resultado esta imagen:
+Nota: el numero en rojo corresponde al número de patas que tiene cada animal.
+
+perro4pato2ballena0-->
+
+<animales>
+    <animal id="1">
+        <nombre>perro</nombre>
+        <patas>4</patas>
+    </animal>
+    <animal id="2">
+        <nombre>pato</nombre>
+        <patas>2</patas>
+    </animal>
+    <animal id="3">
+        <nombre>ballena</nombre>
+        <patas>0</patas>
+    </animal>
+</animales>

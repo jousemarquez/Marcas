@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Ejercicio 2: Marcar con XML el siguiente texto de manera que el marcado posibilite las búsquedas de
+información según los siguientes campos: destinatario del pedido, artículo pedido, dirección de
+entrega, fecha de entrega.
+
+Pedido para el señor Juan Delgado Martínez. El pedido se compone de una bicicleta A2023. A
+entregar en la calle Barco 4, tercer piso, letra A, el día 19-5-2000.-->
+
+<pedidos>
+    <pedido id="1">
+        <destinatario>Juan Delgado Martínez</destinatario>
+        <articulo>Bicicleta A2023</articulo>
+        <direccion>Calle Barco 4, tercer piso, letra A</direccion>
+        <fechaEntrega>19-5-2000</fechaEntrega>
+    </pedido>
+</pedidos>

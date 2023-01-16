@@ -1,0 +1,12 @@
+html{
+    box-sizing: border-box;
+}
+
+patas {
+    color: red;
+}
+
+nombre {
+    color: blue;
+    font-size: 1.6em;
+}

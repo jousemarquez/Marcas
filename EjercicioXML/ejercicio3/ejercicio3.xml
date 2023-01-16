@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Ejercicio 3:
+Escribir un documento XML que almacene la siguiente información:
+
+HECHOS HISTÓRICOS
+
+Descripción de cada hecho: IBM da a conocer el PC.
+Fecha: 12/8/1981
+
+Descripción de cada hecho: Se funda Google.
+Fecha: 4/9/1998
+
+Descripción de cada hecho: Se funda Facebook.
+Fecha: 4/2/2004-->
+
+
+<hechosHistoricos>
+    <hecho id="1">
+        <descripcion>IBM da a conocer el PC.</descripcion>
+        <fecha>
+            <dia>12</dia>
+            <mes>8</mes>
+            <anyo>1981</anyo>
+        </fecha>
+    </hecho>
+    <hecho id="2">
+        <descripcion>Se funda Google.</descripcion>
+        <fecha>
+            <dia>4</dia>
+            <mes>9</mes>
+            <anyo>1998</anyo>
+        </fecha>
+    </hecho>
+    <hecho id="3">
+        <descripcion>Se funda Facebook.</descripcion>
+        <fecha>
+            <dia>4</dia>
+            <mes>2</mes>
+            <anyo>2004</anyo>
+        </fecha>
+    </hecho>
+</hechosHistoricos>

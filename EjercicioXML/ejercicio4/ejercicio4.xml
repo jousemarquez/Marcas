@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Ejercicio 4:
+
+Ejercicio 4:
+Escribir un documento XML que represente la estructura y los datos que se muestran en el siguiente
+esquema:
+
+mensaje ->  remite  -> nombre:
+                    -> email
+        -> destinatario ->nombre
+                        -> email
+        -> asunto
+        -> texto    -> párrafo
+
+
+Completar el contenido del documento para que el texto completo sea el siguiente (tres párrafos en total):
+- ¿Hola qué tal?
+- Hace mucho tiempo que no escribes. A ver si llamas y quedamos pronto.
+- Un saludo.-->
+
+
+<mensaje id="1">
+    <remite>
+        <nombre>Juan</nombre>
+        <email>juan@example.com</email>
+    </remite>
+    <destinatario>
+        <nombre>Pedro</nombre>
+        <email>pedro@example.com</email>
+    </destinatario>
+    <asunto>Quedada</asunto>
+    <texto>
+        <parrafo>¿Hola qué tal?</parrafo>
+        <parrafo>Hace mucho tiempo que no escribes. A ver si llamas y quedamos pronto.</parrafo>
+        <parrafo>Un saludo.</parrafo>
+    </texto>
+</mensaje>
