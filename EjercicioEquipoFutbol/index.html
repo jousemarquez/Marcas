@@ -1,98 +1,321 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es_ES">
 
-<head> 
+<head>
     <meta charset="UTF-8">
-    <meta name="description" content="Ejemplo práctico compatibilidad de ficheros multimeda según navegador."/>
-    <meta name="keywords" content="audio, video, formatos, compatibilidad, navegadores, tablas, html, css">
-    <meta name="language" content="es_ES"> 
+    <meta name="description" content="Ejercicio de Trabajando con las clases_diagrama de clases inicial." />
+    <meta name="keywords" content="clases, diagrama, entornos">
+    <meta name="language" content="es_ES">
     <meta name="author" content="joseantonio.marquez@a.vedrunasevillasj.es">
-    <meta name="revised" content="Friday October 31th, 2022, 8:00pm">
+    <meta name="revised" content="Monday January 16th, 2023, 8:00pm">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
-    <meta http-equiv="refresh" content="300"; URL="index.html">
+    <meta http-equiv="refresh" content="300" ; URL="index.html">
     <meta name="robots" content="INDEX,FOLLOW" />
-    <link href="../EjercicioCompatibilidades/css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link type="image/x-icon" rel="icon">
 
-    <title>Compatibilidad de medios</title>   
+    <title>Trabajando con las clases: diagrama de clases inicial</title>
 
 </head>
 
 <body>
     <h1><span class="blue"></span>Equipo de Fútbol<span class="blue"></span>
-        <h2>Created with <a href="https://bit.ly/3TUbViz">&#9825;</a> by <a href="https://github.com/jousemarquez" target="_blank">José Antonio Márquez</a></h2>
+        <h2>Created with <a href="https://bit.ly/3TUbViz">&#9825;</a> by <a href="https://github.com/jousemarquez"
+                target="_blank">José Antonio Márquez</a>
+            <h2>Created with <a href="https://bit.ly/3TUbViz">&#9825;</a> and <a href="https://github.com/AlbertoF17"
+                    target="_blank">Alberto Fernández</a></h2>
 
-        <table class="container">
-            <thead>
-                <tr>
-                    <th>Clases</th>
-                    <th>ATRIBUTOS (CARACTERÍSTICAS)</th>
-                    <th>MÉTODOS (ACCIONES)</th>
-                    <th>RESPONSABILIDAD</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>MP4</th>
-                    <td>SI</td>
-                    <td>SI</td>
-                    <td>SI</td>
-                    <td>SI</td>
-                    <td>SI</td>
-                </tr>
-                <tr>
-                    <th>WebM</th>
-                    <td>SI</td>
-                    <td>SI</td>
-                    <td>SI</td>
-                    <td>SI</td>
-                    <td>SI</td>
-                </tr>
-                <tr>
-                    <th>AV1</th>
-                    <td>Si</td>
-                    <td>No</td>
-                    <td>No</td>
-                    <td>Si</td>
-                    <td>Si</td>
-                </tr>
-                <tr>
-                    <th>HEVC</th>
-                    <td>Si</td>
-                    <td>Si</td>
-                    <td>Si</td>
-                    <td>No</td>
-                    <td>No</td>
-                </tr>
-                <tr>
-                    <th>MPEG-4</th>
-                    <td>SI</td>
-                    <td>SI</td>
-                    <td>SI</td>
-                    <td>SI</td>
-                    <td>SI</td>
-                </tr>
-                <tr>
-                    <th>Theora (OGV)</th>
-                    <td>Si</td>
-                    <td>Si</td>
-                    <td>No</td>
-                    <td>Si</td>
-                    <td>Si</td>
-                </tr>
-                <tr>
-                    <th>AVI</th>
-                    <td>Si</td>
-                    <td>No</td>
-                    <td>Si</td>
-                    <td>Si</td>
-                    <td>Si</td>
-                </tr>
-            </tbody>
-        </table>
-    <footer>
-        <h2>Created with <a href="https://bit.ly/3TUbViz">&#9825;</a> by <a href="https://github.com/jousemarquez" target="_blank">José Antonio Márquez</a></h2>
-    </footer>
+            <table class="container">
+                <thead>
+                    <tr>
+                        <th>Clases</th>
+                        <th>ATRIBUTOS (CARACTERÍSTICAS)</th>
+                        <th>MÉTODOS (ACCIONES)</th>
+                        <th>RESPONSABILIDAD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Equipo</th>
+                        <td>
+                            <p>Nombre</p>
+                            <p>Nº jugadores</p>
+                            <p>Posición en la liga</p>
+                        </td>
+                        <td>
+                            <p>gana()
+                            </p>
+                            <p>pierde()</p>
+                        </td>
+                        <td>Presentarse al partido para que pueda disputarse.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Jugadores</th>
+                        <td>
+                            <p>Nombre</p>
+                            <p>Posicion</p>
+                            <p>Edad</p>
+                            <p>Altura</p>
+                            <p>Dorsal</p>
+                        </td>
+                        <td>
+                            <p>jugar()
+                            </p>
+                            <p>entrenar()
+                            </p>
+                            <p>pasarBalon()
+                            </p>
+                            <p>chutar()
+                            </p>
+                            <p>moverBalonPies()</p>
+                        </td>
+                        <td>Estar en buenas condiciones para jugar el partido respetando el reglamento.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Campo</th>
+                        <td>
+                            <p>Área de Juego (anchura y longitud)
+                            </p>
+                            <p>Área de Meta
+                            </p>
+                            <p>Esquinas
+                            </p>
+                            <p>Forma: rectángulo
+                            </p>
+                            <p>Longitud y anchura según tipo de partido</p>
+                        </td>
+                        <td>
+                            <p> riego()
+                            </p>
+                            <p>corte()</p>
+                        </td>
+                        <td>Estar en las mejores condiciones posibles en el momento en el que se celebra en el
+                            encuentro.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Portero</th>
+                        <td>
+                            <p>Atributos de jugador</p>
+                        </td>
+                        <td>
+                            <p>pararBalon()
+                            </p>
+                            <p>moverBalonManos()</p>
+                        </td>
+                        <td>Evitar que el balón entre en su portería.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Defensa</th>
+                        <td>
+                            <p>Atributos de jugador</p>
+                            <p>Localización (lateral/centro + izquierda/derecha)</p>
+                        </td>
+                        <td>
+                            <p>defenderCampo()</p>
+                        </td>
+                        <td>Defender su campo para que los delanteros no chuten a su portería.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Central</th>
+                        <td>
+                            <p>Atributos de jugador</p>
+                            <p>Localización (centro/izquierda/derecha)</p>
+                        </td>
+                        <td>
+                            <p>pasarDelanteros()</p>
+                        </td>
+                        <td>Controlar la posesión del balón y pasar el balón a los delanteros.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Delantero</th>
+                        <td>
+                            <p>Atributos de jugador</p>
+                            <p>Localización (centro/izquierda/derecha)</p>
+                        </td>
+                        <td>
+                            <p>patearBalon()</p>
+                        </td>
+                        <td>Chutar a portería para anotar un gol.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Árbitro</th>
+                        <td>
+                            <p>Nombre
+                            </p>
+                            <p>Edad</p>
+                            <p>Altura</p>
+                        </td>
+                        <td>
+                            <p>pitarFalta()
+                            </p>
+                            <p>pitarFueras()
+                            </p>
+                            <p>pitarFinalesDePeriodo()
+                            </p>
+                            <p>sacarTarjeta()</p>
+                        </td>
+                        <td>Sancionar a los jugadores que no cumplen el reglamento.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Balón</th>
+                        <td>
+                            <p>Peso</p>
+                            <p>Diámetro</p>
+                            <p>Material</p>
+                            <p>Presión</p>
+                            <p>Estado</p>
+                            <p>Velocidad</p>
+                        </td>
+                        <td>
+                            <p>arreglarRed()</p>
+                            <p>arreglarPalos()</p>
+                        </td>
+                        <td>Encontrarse en las condiciones óptimas para cumplir sus funciones.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Portería</th>
+                        <td>
+                            <p>Altura</p>
+                            <p>Anchura</p>
+                            <p>Profundidad</p>
+                            <p>Material</p>
+
+                        </td>
+                        <td>
+                            <p>arreglarRed()</p>
+                            <p>arreglarPalos()</p>
+
+
+                        </td>
+                        <td>Encontrarse en las condiciones óptimas para un juego justo.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Área de meta</th>
+                        <td>
+                            <p>Longitud
+                            </p>
+                            <p>Anchura</p>
+
+
+                        </td>
+                        <td>
+                            <p>pintar()</p>
+
+
+
+                        </td>
+                        <td>Mostrarse claramente en el terreno de juego.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Partido</th>
+                        <td>
+                            <p>Tipo: nacional/internacional
+                                </p>
+                                <p>Duracion
+                                    </p>
+                                    <p>Fecha
+                                        </p>
+                                    <p>Hora</p>
+
+                        </td>
+                        <td>
+                            <p>empezar()
+                                </p>
+                                <p>pausar()
+                                    </p>
+                                    <p>finalizar()</p>
+
+
+
+                        </td>
+                        <td>Durar el tiempo establecido.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Punto</th>
+                        <td>
+                            <p>Localización: centro del campo</p>
+
+                        </td>
+                        <td>
+                            <p>pintar()</p>
+
+
+
+                        </td>
+                        <td>Mostrarse claramente en el terreno de juego.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Circunferencia</th>
+                        <td>
+                            <p>Localización: radio de 9,15m alrededor del punto</p>
+                        </td>
+                        <td>
+                            <p>pintar()</p>
+                        </td>
+                        <td>Mostrarse claramente en el terreno de juego.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Gol</th>
+                        <td>
+                            <p>Valor: 1 punto</p>
+                        </td>
+                        <td>
+                            <p>golAnotado()
+                                </p>
+                                <p>golAnulado()</p>
+                        </td>
+                        <td>Sumar o restar un punto al equipo al que se le ha concedido o anulado un gol.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Periodos</th>
+                        <td>
+                            <p>Duración: 45 mins</p>
+                        </td>
+                        <td>
+                            <p>empezar()
+                                </p><p>pausar()</p><p>pausar()
+                                        </p>
+                        </td>
+                        <td>Durar el tiempo establecido.</td>
+                    </tr>
+
+                    <tr>
+                        <th>Reglamento</th>
+                        <td>
+                            <p>Nº normas</p>
+                        </td>
+                        <td>
+                            <p>fueraDeJuego()
+                                </p><p>corner()</p><p>
+                                    saqueDeEsquina()</p>
+                        </td>
+                        <td>Fomentar un juego limpio.</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <footer>
+                <h2>Created with <a href="https://bit.ly/3TUbViz">&#9825;</a> by <a
+                        href="https://github.com/jousemarquez" target="_blank">José Antonio Márquez</a>
+                    <h2>Created with <a href="https://bit.ly/3TUbViz">&#9825;</a> and <a
+                            href="https://github.com/AlbertoF17" target="_blank">Alberto Fernández</a></h2>
+            </footer>
 </body>
+
 </html>
