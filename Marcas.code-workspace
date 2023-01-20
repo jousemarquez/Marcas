@@ -4,10 +4,6 @@
 			"path": "."
 		},
 		{
-			"name": "jousemarquez",
-			"path": "../jousemarquez"
-		},
-		{
 			"name": "Livify",
 			"path": "../Livify"
 		}
