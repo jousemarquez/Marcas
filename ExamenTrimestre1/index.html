@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="Jouse Márquez's Portfolio" />
+    <meta name="description" content="Example of portfolio website as HTML and CSS course on Web Development" />
+    <meta name="keywords" content="portfolio, cv, markdown, html, css, grid, flex">
+    <meta name="language" content="es">
+    <meta name="author" content="joseantonio.marquez@a.vedrunasevillasj.es">
+    <meta name="revised" content="Viernes, Enero 20th, 2023, 18:15pm">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
+    <meta http-equiv="refresh" content="300" ; URL="index.html">
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <section id="logo"><a href="index.html" target="_self"><img src="img/logo.png" alt="Logo"></a></section>
+        <nav>
+            <section id="nav_elements">
+                <a href="#">Inicio</a>
+                <a href="aboutme/aboutme.html">Sobre mí</a>
+                <a href="portfolio/portfolio.html">Portfolio</a>
+                <a href="services/services.html">Services</a>
+                <a href="contact/contact.html">Contact</a>
+            </section>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div id="imageBackground">
+            <div id="text_image">
+                <h1>José Antonio Márquez Flores</h1>
+                <h3>Alumno de FP Desarrollo Web</h3>
+            </div>
+
+
+        </div>
+        <section id="about_me">
+            <h2>Sobre mí</h2>
+            <div id="block">
+                <div id="logo_block"><a href="index.html" target="_self"><img src="img/logo.png" alt="Logo"></a>
+                </div>
+                <div id="text_block">
+                    <h2>José Antonio Márquez Flores</h2>
+                    <p>Frontend Dev Student | Marketing Spectialist | Content Manager</p>
+                    <p>I have been working for the last <b>10 years in content production as a writer, editor
+                            web, blogger, social media account manager, project manager and content creator
+                            audiovisual</b> for Youtube and Twitch. I have been fortunate to work with both national and
+                        international clients (<b>Saudi Arabia, Qatar, Oman, Russia, among others</b>) where English has
+                        been my
+                        principal language of communication throughout my career.</p>
+                    <p><b>Born self-taught.</b> I devour content that helps me enhance my professional profile, so
+                        forever I learn new techniques or mechanics to improve my work.</p>
+                    <p>Let's connect on social media:</p>
+                    <div id="redes_sociales">
+                        <a href="https://www.linkedin.com/in/jousemarquez/" class="fa fa-linkedin fa-2x"></a>
+                        <a href="https://www.linkedin.com/in/jousemarquez/" class="fa fa-github fa-2x"></a>
+                        <a href="mailto:joseantonio.marquez@a.vedrunasevillasj.es" class="fa fa-envelope fa-2x"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div id="portfolio_container">
+                <div class="card">
+                    <h3>Examen de Marcas</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam provident quasi temporibus
+                        aliquam
+                        ad veritatis perferendis iure, dolore tempora repellendus, dolorum assumenda ab soluta dolor est
+                        eaque totam vero a.</p>
+                    <button>Más info</button>
+                </div>
+                <div class="card">
+                    <h3>Examen de Marcas</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam provident quasi temporibus
+                        aliquam
+                        ad veritatis perferendis iure, dolore tempora repellendus, dolorum assumenda ab soluta dolor est
+                        eaque totam vero a.</p>
+                    <button>Más info</button>
+                </div>
+                <div class="card">
+                    <h3>Examen de Marcas</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam provident quasi temporibus
+                        aliquam
+                        ad veritatis perferendis iure, dolore tempora repellendus, dolorum assumenda ab soluta dolor est
+                        eaque totam vero a.</p>
+                    <button>Más info</button>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <h2>Services</h2>
+            <div id="service_container">
+                <div id="service_list">
+                    <p>Durante mi trayectoria como programador, he obtenido un conocimiento sóligo de las siguiente
+                        tecnologías:</p>
+                    <ul>
+                        <li>Frontend</li>
+                        <ol>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                        </ol>
+                        <li>Backend</li>
+                        <ol>
+                            <li>Java</li>
+                            <li>MySQL</li>
+                        </ol>
+                        <li>DevOps</li>
+                        <ol>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                        </ol>
+                    </ul>
+                </div>
+                <div id="service_list">
+                    <table>
+                        <caption>Disponibilidad</caption>
+                        <tr>
+                            <th>Horas</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                        </tr>
+                        <tr>
+                            <td>8:00</td>
+                            <td rowspan="2" colspan="2" class="ocupado">
+                                Ocupado
+                            </td>
+                            <td rowspan="3" class="disponible">
+                                Disponible
+                            </td>
+                            <td rowspan="3" class="ocupado">
+                                Ocupado
+                            </td>
+                            <td class="disponible">
+                                Disponible
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9:00</td>
+                            <td rowspan="2" class="ocupado">
+                                Ocupado
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td rowspan="2" class="disponible">
+                                Disponible
+                            </td>
+                            <td rowspan="2" class="ocupado">
+                                Ocupado
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11:00</td>
+                            <td class="ocupado">
+                                Ocupado
+                            </td>
+                            <td colspan="2" class="disponible">
+                                Disponible
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td rowspan="2" class="ocupado">
+                               Ocupado
+                            </td>
+                            <td rowspan="2" colspan="4" class="disponible">
+                               Disponible
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13:00</td>
+                        </tr>
+                        <tr>
+                            <td>14:00</td>
+                            <td class="fin">
+                              Fin de jornada
+                            </td>
+                            <td class="fin">
+                               Fin de jornada
+                            </td>
+                            <td class="fin">
+                               Fin de jornada
+                            </td>
+                            <td class="fin">
+                                Fin de jornada
+                             </td>
+                             <td class="fin">
+                                Fin de jornada
+                             </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contáctame</h2>
+            <form method="get" autocomplete="on">
+                <fieldset class="field_set">
+                    <legend>Contact me</legend>
+                    <div class="form_block">
+                        <div class="bloque1">
+                            <p><label for="name">Nombre:</label>
+                                <input class="input_text" type="text" placeholder="Nombre">
+                            </p>
+                            <p><label for="email">Correo electrónico:</label>
+                                <input class="input_text" type="email" placeholder="example@example.com">
+                            </p>
+                            <p><label for="subject">Selecciona un asunto:</label>
+                                <select class="input_text">
+                                    <optgroup label="Laboral">
+                                        <option selected>Solicitar entrevista</option>
+                                        <option>Oferta laboral</option>
+                                    </optgroup>
+                                    <optgroup label="Servicios Ofertados">
+                                        <option>Desarrollo de una página web</option>
+                                        <option>Desarrollo de una capa servidor</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+                            <label for="name">¿Cómo me has conocido?</label>
+                            <label for="checkbox"><input class="check" id="box1" type="checkbox">Redes Sociales</label>
+                            <label for="checkbox"><input class="check" id="box2" type="checkbox">Anuncios</label>
+                            <label for="feedback">¿Qué le ha parecido mi web?</label>
+                            <label for="radio"><input name="option" class="check" id="radio1" type="radio">Pobre</label>
+                            <label for="radio"><input name="option" class="check" id="radio2"
+                                    type="radio">Normal</label>
+                            <label for="radio"><input name="option" class="check" id="radio3"
+                                    type="radio">Excelente</label>
+                        </div>
+                        <div class="bloque2">
+                            <p><label for="message">Cuerpo del mensaje:</label></p>
+                            <textarea id="message" placeholder="Aquí va el cuerpo del mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div class="buttons_block">
+                        <input class="button" type="reset" value="Reset" />
+                        <input onClick="alert('Thanks for submitting the form! I will contact you soon.')"
+                            class="button" type="submit" value="Submit" />
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </section>
+    <footer>
+        <h5>Copyright &copy;<a href="https://github.com/jousemarquez" target="_blank" alt="Github"> Jouse Márquez</a>
+        </h5>
+    </footer>
+</body>
+
+</html>

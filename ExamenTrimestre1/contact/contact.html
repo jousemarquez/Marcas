@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="Jouse Márquez's Portfolio" />
+    <meta name="description" content="Example of portfolio website as HTML and CSS course on Web Development" />
+    <meta name="keywords" content="portfolio, cv, markdown, html, css, grid, flex">
+    <meta name="language" content="es">
+    <meta name="author" content="joseantonio.marquez@a.vedrunasevillasj.es">
+    <meta name="revised" content="Viernes, Enero 20th, 2023, 18:15pm">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
+    <meta http-equiv="refresh" content="300" ; URL="index.html">
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <section id="logo"><a href="index.html" target="_self"><img src="../img/logo.png" alt="Logo"></a></section>
+        <nav>
+            <section id="nav_elements">
+                <a href="../index.html">Inicio</a>
+                <a href="../aboutme/aboutme.html">Sobre mí</a>
+                <a href="../portfolio/portfolio.html">Portfolio</a>
+                <a href="../services/services.html">Services</a>
+                <a href="#">Contact</a>
+            </section>
+        </nav>
+    </header>
+
+    <section class="container">
+        
+        <section class="contact">
+            <h2>Contáctame</h2>
+            <form method="get" autocomplete="on">
+                <fieldset class="field_set">
+                    <legend>Contact me</legend>
+                    <div class="form_block">
+                        <div class="bloque1">
+                            <p><label for="name">Nombre:</label>
+                                <input class="input_text" type="text" placeholder="Nombre">
+                            </p>
+                            <p><label for="email">Correo electrónico:</label>
+                                <input class="input_text" type="email" placeholder="example@example.com">
+                            </p>
+                            <p><label for="subject">Selecciona un asunto:</label>
+                                <select class="input_text">
+                                    <optgroup label="Laboral">
+                                        <option selected>Solicitar entrevista</option>
+                                        <option>Oferta laboral</option>
+                                    </optgroup>
+                                    <optgroup label="Servicios Ofertados">
+                                        <option>Desarrollo de una página web</option>
+                                        <option>Desarrollo de una capa servidor</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+                            <label for="name">¿Cómo me has conocido?</label>
+                            <label for="checkbox"><input class="check" id="box1" type="checkbox">Redes Sociales</label>
+                            <label for="checkbox"><input class="check" id="box2" type="checkbox">Anuncios</label>
+                            <label for="feedback">¿Qué le ha parecido mi web?</label>
+                            <label for="radio"><input name="option" class="check" id="radio1" type="radio">Pobre</label>
+                            <label for="radio"><input name="option" class="check" id="radio2"
+                                    type="radio">Normal</label>
+                            <label for="radio"><input name="option" class="check" id="radio3"
+                                    type="radio">Excelente</label>
+                        </div>
+                        <div class="bloque2">
+                            <p><label for="message">Cuerpo del mensaje:</label></p>
+                            <textarea id="message" placeholder="Aquí va el cuerpo del mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div class="buttons_block">
+                        <input class="button" type="reset" value="Reset" />
+                        <input onClick="alert('Thanks for submitting the form! I will contact you soon.')"
+                            class="button" type="submit" value="Submit" />
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </section>
+    <footer>
+        <h5>Copyright &copy;<a href="https://github.com/jousemarquez" target="_blank" alt="Github"> Jouse Márquez</a>
+        </h5>
+    </footer>
+</body>
+
+</html>
