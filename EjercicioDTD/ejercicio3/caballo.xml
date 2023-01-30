@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE caballo [ 
+ <!ELEMENT caballo (nombre, raza, edad)> 
+ <!ELEMENT nombre (#PCDATA)> 
+ <!ELEMENT raza (#PCDATA)> 
+ <!ELEMENT edad EMPTY> 
+]> 
+
+<!-- Ejercicio 3:
+El siguiente documento XML ("caballo.xml") está bien formado. Sin embargo, no es válido.
+Para que lo sea,  realizar los cambios necesarios en dicho documento, pero sin modificar la DTD interna. 
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE caballo [ 
+ <!ELEMENT caballo (nombre, raza, edad)> 
+ <!ELEMENT nombre (#PCDATA)> 
+ <!ELEMENT raza (#PCDATA)> 
+ <!ELEMENT edad EMPTY> 
+]> 
+<caballo> 
+ <nombre>Silvestre</nombre> 
+ <raza>Morgan</raza> 
+</caballo>
+-->
+
+
+<caballo> 
+ <nombre>Silvestre</nombre> 
+ <raza>Morgan</raza> 
+ <edad /> 
+</caballo>

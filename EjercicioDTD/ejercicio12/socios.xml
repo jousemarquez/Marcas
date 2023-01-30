@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE socios [ 
+ <!ELEMENT socios (socio)*>
+<!ELEMENT socio ((numero, clave)+, nombre, edad)>
+<!ELEMENT clave (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT numero (#PCDATA)> 
+]>
+
+<!-- Ejercicio 12: 
+
+El siguiente documento XML ("socios.xml") está bien formado. Sin embargo, no es válido.
+Para que lo sea,  realizar los cambios necesarios en la DTD interna de dicho documento. 
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE socios [ 
+ <!ELEMENT socios (socio)*> 
+ <!ELEMENT socio ((numero, clave)+, nombre, edad)> 
+ <!ELEMENT clave (#PCDATA)> 
+ <!ELEMENT edad (#PCDATA)> 
+ <!ELEMENT nombre (#PCDATA)> 
+ <!ELEMENT numero (#PCDATA)> 
+]> 
+<socios> 
+ <socio> 
+ <nombre>Ana</nombre> 
+ <edad>21</edad> 
+ </socio> 
+ <socio> 
+ <numero>598</numero> 
+ <nombre>Iker</nombre> 
+ <edad>19</edad> 
+ </socio> 
+ <socio> 
+ <clave>hY75Du</clave> 
+ <nombre>Iker</nombre> 
+ </socio> 
+</socios> 
+-->
+
+<socios>
+    <socio>
+        <nombre>Ana</nombre>
+        <edad>21</edad>
+    </socio>
+    <socio>
+        <numero>598</numero>
+        <clave></clave>
+        <nombre>Iker</nombre>
+        <edad>19</edad>
+    </socio>
+    <socio>
+        <numero></numero>
+        <clave>hY75Du</clave>
+        <nombre>Iker</nombre>
+        <edad></edad>
+    </socio>
+</socios>
+

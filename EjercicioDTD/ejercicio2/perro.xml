@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE perro [ 
+ <!ELEMENT perro (edad, nombre)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)> 
+]>
+
+<!-- Ejercicio 2: El siguiente documento XML ("perro.xml") está bien formado. Sin embargo, no es válido.
+Para que lo sea, realizar los cambios necesarios en dicho documento, pero sin modificar la DTD interna. 
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE perro [ 
+ <!ELEMENT perro (edad, nombre)> 
+ <!ELEMENT edad (#PCDATA)> 
+ <!ELEMENT nombre (#PCDATA)> 
+]> 
+<perro> 
+ <nombre>Pancho</nombre> 
+ <edad>8</edad> 
+</perro> 
+-->
+
+<perro>
+    <edad>8</edad>
+    <nombre>Pancho</nombre>
+</perro> 

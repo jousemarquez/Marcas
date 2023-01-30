@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE mesa [ 
+ <!ELEMENT mesa ANY> 
+ <!ELEMENT material (#PCDATA)> 
+ <!ELEMENT color (#PCDATA)> 
+]> 
+
+<!-- Ejercicio 4:
+
+Ejercicio 4:
+El siguiente documento XML ("mesa.xml") está bien formado. Sin embargo, no es válido.
+Para que lo sea,  realizar los cambios necesarios en dicho documento, pero sin modificar la DTD interna. 
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE mesa [ 
+ <!ELEMENT mesa ANY> 
+ <!ELEMENT material (#PCDATA)> 
+ <!ELEMENT color (#PCDATA)> 
+]> 
+<mesa>La mesa de <material>madera es de color  
+<color>marrón</color></material>.</mesa> 
+-->
+
+
+<mesa>
+ <material>madera</material>
+ <color>marrón</color>
+</mesa>
+
+

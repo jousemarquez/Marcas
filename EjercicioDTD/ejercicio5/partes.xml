@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE partes [ 
+ <!ELEMENT partes (secciones)> 
+ <!ELEMENT secciones ANY> 
+ <!ELEMENT letras (#PCDATA)> 
+]> 
+
+<!-- Ejercicio 5:
+El siguiente documento XML ("partes.xml") está bien formado. Sin embargo, no es válido.
+Para que lo sea,  realizar los cambios necesarios en dicho documento, pero sin modificar la DTD interna. 
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE partes [ 
+ <!ELEMENT partes (secciones)> 
+ <!ELEMENT secciones ANY> 
+ <!ELEMENT letras (#PCDATA)> 
+]> 
+<secciones> 
+ <letras>abc</letras> 
+ MNT 
+ <letras>xyz</letras> 
+</secciones> 
+-->
+
+<partes> 
+ <secciones>
+  <letras>abc</letras> 
+  MNT 
+  <letras>xyz</letras> 
+ </secciones> 
+</partes>

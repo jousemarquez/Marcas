@@ -1,0 +1,43 @@
+<!DOCTYPE viajes [ 
+ <!ELEMENT viajes (austria, italia, francia)>
+<!ELEMENT austria (ciudad+)>
+<!ELEMENT italia (ciudad+)>
+<!ELEMENT francia (ciudad+)>
+<!ELEMENT ciudad (#PCDATA)> 
+]>
+
+<!-- Ejercicio 6: El siguiente documento XML ("viajes.xml") está bien formado. Sin embargo, no es válido.
+Para que lo sea,  realizar los cambios necesarios en dicho documento, pero sin modificar la DTD interna. 
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE viajes [ 
+ <!ELEMENT viajes (austria, italia, francia)> 
+ <!ELEMENT austria (ciudad+)> 
+ <!ELEMENT italia (ciudad+)> 
+ <!ELEMENT francia (ciudad+)> 
+ <!ELEMENT ciudad (#PCDATA)> 
+]> 
+<viajes> 
+ <austria> 
+ <viena/> 
+ </austria> 
+ <italia> 
+ <florencia/> 
+ <roma/> 
+ <venecia/> 
+ </italia> 
+ <francia/> 
+</viajes>-->
+
+<viajes>
+    <austria>
+        <ciudad>Viena</ciudad>
+    </austria>
+    <italia>
+        <ciudad>Florencia</ciudad>
+        <ciudad>Roma</ciudad>
+        <ciudad>Venecia</ciudad>
+    </italia>
+    <francia>
+        <ciudad></ciudad>
+    </francia>
+</viajes>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE ropa [ 
+ <!ELEMENT ropa (prenda+)> 
+ <!ELEMENT prenda (nombre, color*)> 
+ <!ELEMENT nombre (#PCDATA)> 
+ <!ELEMENT color (#PCDATA)> 
+]>
+
+<!-- Ejercicio 7: El siguiente documento XML ("ropa.xml") está bien formado. Sin embargo, no es válido.
+Para que lo sea,  realizar los cambios necesarios en dicho documento, pero sin modificar la DTD interna. 
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE ropa [ 
+ <!ELEMENT ropa (nombre, color*)> 
+ <!ELEMENT nombre (#PCDATA)> 
+ <!ELEMENT color (#PCDATA)> 
+]> 
+<ropa> 
+ <nombre>guante</nombre> 
+ <color>rojo</color> 
+ <color>blanco</color> 
+ <nombre>bufanda</nombre> 
+ <color>verde</color> 
+ <color>azul</color> 
+</ropa> -->
+
+<ropa>
+    <prenda>
+        <nombre>guante</nombre>
+        <color>rojo</color>
+        <color>blanco</color>
+    </prenda>
+    <prenda>
+        <nombre>bufanda</nombre>
+        <color>verde</color>
+        <color>azul</color>
+    </prenda>
+</ropa>

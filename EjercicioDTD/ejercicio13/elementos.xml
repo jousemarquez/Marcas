@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE elementos [ 
+ <!ELEMENT elementos (any*, vacio?)>
+<!ELEMENT any (#PCDATA)>
+<!ELEMENT vacío EMPTY> 
+]>
+
+<!-- Ejercicio 13:
+El siguiente documento XML ("elementos.xml") está bien formado. Sin embargo, no es válido.
+Para que lo  sea, realizar los cambios necesarios en la DTD interna de dicho documento. 
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE elementos [ 
+ <!ELEMENT elementos (pcdata*, any+, vacio)> 
+ <!ELEMENT pcdata (#PCDATA)> 
+ <!ELEMENT any (ANY)> 
+ <!ELEMENT vacío (EMPTY)> 
+]> 
+<elementos> 
+ <any/> 
+ <vacio/> 
+</elementos>
+-->
+
+<elementos>
+    <any/>
+    <vacio/>
+</elementos>

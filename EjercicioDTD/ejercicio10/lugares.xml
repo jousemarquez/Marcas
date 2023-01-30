@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lugares [ 
+ <!ELEMENT lugares (lugar1, lugar2)>
+<!ELEMENT lugar1 (#PCDATA)>
+<!ELEMENT lugar2 (#PCDATA)> 
+]>
+
+<!-- Ejercicio 10:
+
+El siguiente documento XML ("lugares.xml") está bien formado. Sin embargo, no es válido.
+Para que lo sea, realizar los cambios necesarios en la DTD interna de dicho documento. 
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE lugares [ 
+ <!ELEMENT lugares ANY*> 
+]> 
+<lugares>En el <lugar>polo norte</lugar> hace mucho frío. Pero, en el  <lugar>desierto del Sahara</lugar> hace mucho calor.</lugares> -->
+
+<lugares>
+    <lugar1>polo norte</lugar1>
+    <lugar2>desierto del Sahara</lugar2>
+</lugares>
