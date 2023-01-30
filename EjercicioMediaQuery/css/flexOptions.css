@@ -1,0 +1,42 @@
+/* flex-basis define el tamaño que, por defecto, va a tener un elemento antes de que se distribuya en el espacio restante. */
+.flex-basis {
+    /* Con calc podemos hacer operaciones incluso entre medidas no similares*/
+    flex-basis: calc(100% - var(--my-width) + 1vw);
+}
+
+/* flex-grow es el factor de crecimiento. Crecen hasta obtener todo el espacio 
+    (va repartiendo pixeles en proporcion al numero que pongas. 0 por defecto ajusta a tamaño del contenido) */
+.flex-grow1 {
+    flex-grow: 1;
+}
+
+.flex-grow2 {
+    flex-grow: 2;
+}
+
+.flex-grow3 {
+    flex-grow: 3;
+}
+
+/* flex-grow es el factor de decrecimiento. 
+    (va repartiendo pixeles en proporcion al numero que pongas. 0 por defecto ajusta a tamaño del contenido) */
+.flex-shrink1 {
+    flex-shrink: 1;
+}
+.flex-shrink2 {
+    flex-shrink: 2;
+}
+.flex-shrink3 {
+    flex-shrink: 3;
+}
+
+/* flex-shortand: grow shrink basis*/
+.flex-shortand1 {
+    flex: 1 4 33%;
+}
+.flex-shortand2 {
+    flex: 4 6 33%;
+}
+.flex-shortand {
+    flex: 6 2 33%;
+}

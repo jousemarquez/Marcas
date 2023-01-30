@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Crear Variables*/
+:root {
+    --my-variable: red;
+    --my-width: 500px;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    font-size: 0.8rem;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: red;
+}
+
+h2 {
+    text-align: center  ;
+}
+
+/* NAV */
+
+nav {
+    min-height: 77px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #DDDDDD;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    width: 75px;
+    height: 75px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menuButton {
+    min-width: 7rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+a.menuButton[href="#"] {
+    text-decoration: underline;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 30vh;
+    background-image: url(../media/img/home-bg.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* cards*/
+
+#cardContainer {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.cards {
+    background-color: var(--my-variable);
+    text-align: center;
+}

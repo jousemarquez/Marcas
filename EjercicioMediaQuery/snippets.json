@@ -1,0 +1,30 @@
+{
+    "document sample": {
+        "prefix": "myd",
+        "body": [
+            "<!DOCTYPE html>",
+            "<html lang=\"en\">\n",
+            "\t<head>\n",
+            "\t\t<meta charset=\"UTF-8\">",
+            "\t\t<meta name=\"description\" content=\"$1\">",
+            "\t\t<meta name=\"keywords\" content=\"$2\">",
+            "\t\t<meta name=\"language\" content=\"EN\">",
+            "\t\t<meta name=\"author\" content=\"joaquin.borrego@vedruna.es\">",
+            "\t\t<meta name=\"robots\" content=\"index,follow\">",
+            "\t\t<meta name=\"revised\" content=\"Day, Month 0th, 202$3, 00:00am\">",
+            "\t\t<meta name=\"viewport\" content=\"width=device-width, initial scale=1.0\">",
+            "\t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE-edge, chrome1\">",
+            "\t\t<meta http-equiv=\"refresh\" content=\"300; URL=$4.html\">",
+            "\t\t<link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\" />\n",
+            "\t\t<!-- Icono al lado del titulo -->",
+            "\t\t<link rel=\"shortcut icon\" href=\"media/icon/favicon.ico\" type=\"image/x-icon\">",
+            "\t\t<title>$5</title>\n",
+            "\t</head>\n",
+            "\t<body>",
+            "\t\t$6",
+            "\t</body>\n",
+            "</html>"
+        ],
+        "description": "My document sample"
+    }
+}

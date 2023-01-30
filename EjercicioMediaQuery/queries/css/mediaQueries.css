@@ -1,0 +1,88 @@
+.container {
+    background-color: blue;
+    padding: 2rem;
+    text-align: center;
+    max-width: 80rem;
+    margin: 1rem auto;
+}
+
+.texto {
+    font-size: 6rem;
+    margin: 0;
+}
+
+/* Tener habilitado graficos de fondo al imprimir */
+@media print {
+    body {
+        background-color: red;
+    }
+}
+
+/* Desktop first */
+/* en el parentesis de media solo se admiten pixeles y densidad de pixeles (dpi) */
+@media (max-width: 400px) {
+    body {
+        background-color: green;
+    }
+
+    .container {
+        max-width: 20rem;
+    }
+
+    .texto {
+        font-size: 3rem;
+    }
+}
+
+/* IMPORTANTE EL ORDEN EN CSS (DE MAS GRANDE A MAS PEQUEÑO EN DESKTOP FIRST)*/
+@media (max-width: 200px) {
+    body {
+        background-color: greenyellow;
+    }
+}
+
+/* Mobile first (Más usado)*/
+@media (min-width: 400px) {
+    body {
+        background-color: gold;
+    }
+
+    .container {
+        max-width: 25rem;
+    }
+
+    .texto {
+        font-size: 4rem;
+    }
+}
+
+/* IMPORTANTE EL ORDEN EN CSS (DE MAS PEQUEÑO A MAS GRANDE EN MOBILE FIRST)*/
+@media (min-width: 600px) {
+    body {
+        background-color: grey;
+    }
+}
+
+/* Intervalo*/
+@media (min-width: 450px) and (max-width: 500px) {
+    body {
+        background-color: red;
+    }
+}
+
+/* Medidas mas usadas: */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }
