@@ -1,0 +1,104 @@
+/* screen/print, orientation:portrait or landscape, opcional: clip-path*/
+
+/* INICIAL */
+html {
+    box-sizing: border-box;
+    font-size: 63.5%; /*Para que mida 10 el rems*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* GLOBALES*/
+.columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.rows {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* IMAGENES RESPONSIVE (Contar como global)*/
+img {
+    max-width: 100%; /*Con max nunca crecerá la imagen mas de su tamaño natural, pero si mas pequeña*/
+    display: block;
+}
+
+/*Especificos*/
+h1, h2 {
+    text-align: center;
+}
+
+#responsiveContainer {
+    background-color: dodgerblue;
+    width: 90%;
+    max-width: 1000px;
+    width: min(90%, 1000px);
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container {
+    background-color: dodgerblue;
+    height: 20rem;
+    font-size: 4rem;
+    padding-top: 8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/*------------------------------------------*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    /*------------------------------------------*/
+    .flexColumnsResponsive {
+        display: flex;
+        gap: 2rem;
+    }
+    .flex {
+        flex: 1;
+    }
+    /*------------------------------------------*/
+    .gridColumnsResponsive {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }

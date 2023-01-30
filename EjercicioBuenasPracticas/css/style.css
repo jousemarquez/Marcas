@@ -1,0 +1,96 @@
+/* INICIAL */
+html {
+    box-sizing: border-box;
+    font-size: 63.5%; /*Para que mida 10 el rems*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* GLOBALES*/
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* IMAGENES RESPONSIVE (Contar como global)*/
+img {
+    max-width: 100%; /*Con max nunca crecerá la imagen mas de su tamaño natural, pero si mas pequeña*/
+    display: block;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/* BEM */
+
+.card {
+    border: 2px black solid;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.card__imagen {
+    margin: 2rem; 
+}
+
+.card__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__contenido__titulo {
+    margin: 0;
+    font-size: 4rem;
+}
+
+.card__contenido__texto {
+    margin-top: 0;
+    color: grey;
+    padding: 0rem 2rem;
+}
+
+.card__precios {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card__precios__precioProducto {
+    font-size: 4rem;
+    color: green;
+    font-weight: 900;
+    margin: 0;
+}
+
+.card__precios__precioProducto--oferta {
+    color: red;
+    text-decoration: line-through;
+}
+
+.card__boton {
+    all: unset;
+    background-color: dodgerblue;
+    margin: 2rem 6rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.card__boton:hover {
+    background-color: #014570;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/

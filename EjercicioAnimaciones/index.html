@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--dark modo oscuro, light modo normal-->
+<html lang="en" data-bs-theme="dark">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Aplicacion de lista de tareas">
+    <meta name="keywords" content="task, list, html, js, bootstrap">
+    <meta name="language" content="EN">
+    <meta name="author" content="joaquin.borrego@vedruna.es">
+    <meta name="robots" content="index,follow">
+    <meta name="revised" content="Tuesday, January 31th, 2023, 05:00pm">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
+
+    <!-- Añado la fuente Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+        defer></script> -->
+
+    <!-- My css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Icono al lado del titulo -->
+    <link rel="shortcut icon" href="media/icon/favicon.ico" type="image/x-icon">
+    <title>Clase 06 Febrero 2023</title>
+
+</head>
+
+<body>
+    <a href="spidey/index.html"><h1>Animaciones</h1></a>
+    <div id="container">
+        <div id="transform">
+            <!-- Transform no empuja a otros elementos ni sale del flujo -->
+            <h2>Transform</h2>
+            <div class="contenedorDeElementos">
+                <div id="elemento1" class="elemento">Elemento 1</div>
+                <div id="elemento2" class="elemento">Elemento 2</div>
+                <div id="elemento3" class="elemento">Elemento 3</div>
+                <div id="elemento4" class="elemento">Elemento 4</div>
+                <div id="elemento5" class="elemento">Elemento 5</div>
+            </div>
+        </div>
+
+        <div id="transition">
+            <!-- 
+                JS -> CSS -> Layout (width, height..) -> Paint (color) -> Composite (transform, opacity) 
+                csstriggers.com
+
+                Los elementos inline no se pueden animar
+                Todos los elementos tienen un estado inicial predeterminado
+                Debe haber un disparador para que una transicion suceda
+            -->
+            <h2>Transition</h2>
+            <div class="contenedorDeElementos">
+                <div id="elementoA" class="elemento">Elemento A</div>
+                <div id="elementoB" class="elemento">Elemento B</div>
+                <div id="elementoC" class="elemento">Elemento C</div>
+                <div id="elementoD" class="elemento">Elemento D</div>
+                <div id="elementoE" class="elemento">Elemento E</div>
+            </div>
+        </div>
+
+        <div id="animations">
+            <!-- 
+                La unica diferencia con las transitions es que no necesita disparador
+            -->
+            <h2>Animations</h2>
+            <div class="contenedorDeElementos">
+                <div id="elemento1A" class="elemento">Elemento 1A</div>
+                <div id="elemento2B" class="elemento">Elemento 2B</div>
+                <div id="elemento3C" class="elemento">Elemento 3C</div>
+                <div id="elemento4D" class="elemento">Elemento 4D</div>
+                <div id="elemento5E" class="elemento">Elemento 5E</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

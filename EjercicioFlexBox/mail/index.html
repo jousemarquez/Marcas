@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="how to send a mail">
+    <meta name="keywords" content="mail, form, html, css, php">
+    <meta name="language" content="EN">
+    <meta name="author" content="joaquin.borrego@vedruna.es">
+    <meta name="robots" content="index,follow">
+    <meta name="revised" content="Friday 28, January 28th, 2023, 23:50pm">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
+    <meta http-equiv="refresh" content="300; URL=index.html">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Icono al lado del titulo -->
+    <link rel="shortcut icon" href="media/icon/favicon.ico" type="image/x-icon">
+    <title>Contact</title>
+
+</head>
+
+<body>
+    <div id="contact">
+        <h1>Contact</h1>
+        <form action="mailto:joaquin.borrego@vedruna.es" method="get">
+            <fieldset>
+                <legend>Contact me</legend>
+
+                <div class="row">
+                    <label for="subject">Asunto:</label>
+                    <input type="text" id="subject" name="subject" required />
+                </div>
+
+                <div class="row">
+                    <label for="cc">CC:</label>
+                    <input type="text" id="cc" name="cc" />
+                </div>
+
+                <div class="column">
+                    <label for="body">Cuerpo del mensaje: </label> <br />
+                    <textarea id="body" name="body" placeholder="Aqui va el cuerpo del mensaje..." rows="15"
+                        cols="40" required></textarea>
+                </div>
+
+                <div class="row">
+                    <input id="sendBttn" type="submit" value="Send" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>

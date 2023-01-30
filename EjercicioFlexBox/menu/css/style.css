@@ -1,0 +1,67 @@
+/* MENÚ 1*/
+/* Estado Normal*/
+#menu {
+    background-color: dodgerblue;
+    border: 2px black solid;
+    border-radius: 10%;
+    width: 75px;
+}
+
+#menuBttn a {
+    text-decoration: none;
+    color: white;
+    font-size: 5rem;
+}
+
+#menuBttn a[href="#"] {
+    display: none;
+}
+
+#navBttn1 {
+    display: none;
+}
+
+/* Cuando pulsamos */
+#menu:target a[href="#menu"] {
+    display: none;
+}
+
+#menu:target a[href="#"] {
+    display: block;
+}
+
+#menu:target #navBttn1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: dodgerblue;
+    width: 75px;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/* Estado Normal */
+#menu2 {
+    margin-top: 50px;
+    color: white;
+    background-color: dodgerblue;
+    border: 2px black solid;
+    border-radius: 10%;
+    font-size: 5rem;
+    width: 75px;
+}
+
+#menu2 a {
+    font-size: 1rem;
+}
+
+#hiddenNav {
+    display: none;
+}
+
+/* Cuando pulsamos */
+
+#menu2:focus #hiddenNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

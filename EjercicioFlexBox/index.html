@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Clase 30 enero 2023">
+    <meta name="keywords" content="media queries, css">
+    <meta name="language" content="EN">
+    <meta name="author" content="joaquin.borrego@vedruna.es">
+    <meta name="robots" content="index,follow">
+    <meta name="revised" content="Monday, January 30th, 2023, 09:00pm">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
+    <meta http-equiv="refresh" content="300; URL=index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <title>Media Queries</title>
+
+</head>
+
+<body>
+    <h1>Contenedores</h1>
+    <!------------------------------------------------------->
+
+    <h2>Contenedores Responsive</h2>
+    <div id="responsiveContainer">
+
+    </div>
+
+    <!------------------------------------------------------->
+
+    <h2>Columnas Responsive en Flexbox</h2>
+    <div class="flexColumnsResponsive">
+        <div class="container flex">1</div>
+        <div class="container flex">2</div>
+        <div class="container flex">3</div>
+    </div>
+
+    <!------------------------------------------------------->
+
+    <h2>Columnas Responsive en Grid</h2>
+    <div class="gridColumnsResponsive">
+        <div class="container">1</div>
+        <div class="container">2</div>
+        <div class="container">3</div>
+    </div>
+
+    <!------------------------------------------------------->
+
+    <h2>Imagenes responsive</h2>
+
+    <picture>
+        <source srcset="img/imagen.avif" type="image/avif"/>
+        <source srcset="img/imagen.webp" type="image/webp"/>
+        <img loading="lazy" src="img/imagen.jpg" alt="responsivePic" />
+    </picture>
+
+    <!------------------------------------------------------->
+
+    <h2> SRC SET </h2>
+    <picture>
+        <source
+            sizes="1920w, 1280w, 640w"
+            srcset="img/imagen.avif 1920w,
+                    img/imagen-1000.avif 1280w,
+                    img/imagen-700.avif 640w"
+            type="image/avif"
+        >
+        <source
+            sizes="1920w, 1280w, 640w"
+            srcset="img/imagen.webp 1920w,
+                    img/imagen-1000.webp 1280w,
+                    img/imagen-700.webp 640w"
+            type="image/webp"
+        >
+        <source
+            sizes="1920w, 1280w, 640w"
+            srcset="img/imagen.jpg 1920w,
+                    img/imagen-1000.jpg 1280w,
+                    img/imagen-700.jpg 640w"
+            type="image/jpeg"
+        >
+        <img loading="lazy" src="img/imagen.jpg" alt="imagen">
+    </picture>
+
+</body>
+
+</html>

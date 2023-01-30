@@ -1,0 +1,26 @@
+/* INICIAL */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+/* ---------------------------------------------------------------------------- */
+.contenedor {
+    width: 900px;
+    height: 700px;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+}

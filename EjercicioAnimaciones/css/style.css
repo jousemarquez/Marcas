@@ -1,0 +1,227 @@
+/* INICIAL */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+/* ---------------------------------------------------------------------------------------- */
+h1, h2 {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contenedorDeElementos {
+    border: 2px red solid;
+    width: 35vw;
+    height: auto;
+}
+
+.elemento {
+    background-color: dodgerblue;
+    width: 100px;
+    height: 100px;
+    border: green 2px solid;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+.contenedorDeElementos:hover #elemento1 {
+    /* transform: translateX(396px);
+    transform: translateY(396px); */
+    transform: translate(396px, 396px);
+}
+
+.contenedorDeElementos:hover #elemento2 {
+    /* 
+        grados: 0-360 deg
+        radians: 0-6.28319 rad
+        gradians: 0-400 grad
+        turn: 0-1 turn
+    */
+    transform: translateX(100px) rotate(20deg);
+}
+
+.contenedorDeElementos:hover #elemento3 {
+    transform: translateX(300px) scale(2, 2);
+}
+
+.contenedorDeElementos:hover #elemento4 {
+    /* 
+        grados: 0-360 deg
+        radians: 0-6.28319 rad
+        gradians: 0-400 grad
+        turn: 0-1 turn
+    */
+    transform: translateX(20px) skew(20deg, 10deg);
+}
+
+.contenedorDeElementos:hover #elemento5 {
+    /* 
+        transform-origin: 50% 50% 0
+        porcentajes, unidedades de medidas, top, left, right, bottom, center
+    */
+    transform-origin: bottom left;
+    transform: rotate(180deg);
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+.contenedorDeElementos:hover #elementoA {
+    background-color: red;
+    text-align: right;
+    /* property and duration*/
+    transition: all 2s;
+}
+
+.contenedorDeElementos:hover #elementoB {
+    transform: translateX(100px);
+    /* Adecuado poner que propiedad va a animarse*/
+    transition-property: transform;
+    /* Tiempo que tardara */
+    transition-duration: 2s;
+    /* transition: transform 2s; */
+}
+
+.contenedorDeElementos:hover #elementoC {
+    transform: translateX(100px);
+    background-color: purple;
+    /* Adecuado poner que propiedad va a animarse*/
+    transition-property: transform, background-color;
+    /* Tiempo que tardara */
+    transition-duration: 2s, 4s;
+}
+
+.contenedorDeElementos:hover #elementoD {
+    transform: translateX(396px);
+    /* Adecuado poner que propiedad va a animarse*/
+    transition-property: transform;
+    /* Tiempo que tardara */
+    transition-duration: 3s;
+    /* Curva de aceleracion*/
+    transition-timing-function: ease-in; /* ease, linear, ease-in, ease-out, ease-in-out*/
+    /* transition-timing-function: steps(6, end); */
+    /* transition-timing-function: cubic-bezier(.52,-0.75,.06,1.84); ver en https://cubic-bezier.com/*/
+}
+
+.contenedorDeElementos:hover #elementoE {
+    background-color: yellow;
+    transform: translateX(396px);
+    /* Adecuado poner que propiedad va a animarse*/
+    transition-property: background-color, transform;
+    /* Tiempo que tardara */
+    transition-duration: 1s, 3s;
+    /* Curva de aceleracion*/
+    transition-timing-function: ease-in, ease-out; /* ease, linear, ease-in, ease-out, ease-in-out*/
+    /* transition-timing-function: steps(6, end); */
+    /* transition-timing-function: cubic-bezier(.52,-0.75,.06,1.84); ver en https://cubic-bezier.com/*/
+    /* Define la espera para que una transicion se ejecute*/
+    transition-delay: 0s, 1s;
+    /*transition: background-color 1s ease-in 0s, transform 3s ease-out 1s*/
+}
+
+/* ---------------------------------------------------------------------------------------- */
+.contenedorDeElementos #elemento1A {
+    animation: animacion1 3s;
+}
+
+@keyframes animacion1 {
+    from {
+        transform: translate(0);
+    } to {
+        transform: translate(400px);
+    }
+}
+
+.contenedorDeElementos #elemento2B {
+    animation: animacion2 3s infinite;
+}
+
+@keyframes animacion2 {
+    0% {
+        transform: translate(0);
+    } 
+    50%{
+        transform: translate(400px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.contenedorDeElementos #elemento3C {
+    transform: translate(0); /* Si en el keyframe no ponemos 0% ni 100% este sera el valor inicial y final*/
+    animation: animacion3a 5s infinite, animacion3b 5s infinite;
+}
+
+@keyframes animacion3a {
+    50%{
+        transform: translate(400px);
+    }
+}
+
+@keyframes animacion3b {
+    50%{
+        background-color: crimson;
+    }
+}
+
+@keyframes animacion3c {
+    100% {
+        background-color: crimson;
+    }
+}
+
+.contenedorDeElementos #elemento4D {
+    transform: translate(0); /* Si en el keyframe no ponemos 0% ni 100% este sera el valor inicial y final*/
+    animation-name: animacion3a, animacion3c;
+    animation-duration: 7s, 3s;
+    animation-timing-function: ease-in, linear;
+    animation-delay: 1s, 1s;
+    animation-iteration-count: 3, 2.5; /* infinite */
+    animation-fill-mode: backwards, forwards; /* Que sucede despues de la animacion, que estilos se quedan */
+    animation-direction: alternate, reverse;
+}
+
+.contenedorDeElementos #elemento5E {
+    animation-name: rotar;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards; /* Que sucede despues de la animacion, que estilos se quedan */
+    animation-direction: alternate;
+    animation-play-state: paused;
+}
+
+#elemento5E:hover {
+    animation-play-state: running;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
