@@ -14,11 +14,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
-
 /* ---------------------------------------------------------------------------- */
 .contenedor {
     width: 900px;
@@ -28,36 +23,80 @@ img {
     justify-content: center;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 #spidey {
-    transform: translateY(-70px); /* 1º Que por defecto esté 70px más arriba */
+    max-width: 100%;
+    display: block;
+    transform: translateY(-70px);
+    /* 1º Que por defecto esté 70px más arriba */
     transition-duration: 2s;
 }
 
-#spidey:hover {
-    transform: translateY(-10px); /* 2º Que al hacer hover sobre el div baje a su posición inicial */
-    transition-duration: 2s;
+.contenedor:hover #spidey {
+    transform: translateY(-10px);
+    /* 2º Que al hacer hover sobre el div baje a su posición inicial */
+    transition: transform 0.4s;
 }
 
-
-#spidey:active { /* 3º Que al pulsar el div contenedor, se realice una animación de balanceo (rotar y moverse) */
-    animation: animacion2 3s infinite;
-    transform-origin: top center;
+.contenedor:active #spidey {
+    /* 3º Que al pulsar el div contenedor, se realice una animación de balanceo (rotar y moverse) */
+    transform: translateY(-10px);
+    animation: oscilar 6s infinite;
+    transform-origin: center top;
 }
 
-@keyframes animacionrotate {
+.contenedor:active #web{
+    transform: translateX(0); /* Si en el keyframe no ponemos 0% ni 100% este sera el valor inicial y final*/
+    animation-name: lanzado;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.98,.15,.37,.7);
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite; /* infinite */
+    animation-fill-mode:none; /* Que sucede despues de la animacion, que estilos se quedan */
+    animation-direction:normal;
+}
+
+@keyframes oscilar {
+    from {
+        transform: rotate(0deg) translateY(-30px);
+        animation-timing-function: cubic-bezier(0.1, 0.3, 0.3, 1);
+        filter: invert(100%);
+    }
+
+    25% {
+        transform: rotate(20deg) translateY(-30px);
+        animation-timing-function: cubic-bezier(0.7, 0.0, 0.9, 0.7);
+        filter: invert(0%);    }
+
+    50% {
+        transform: rotate(0deg) translateY(-30px);
+        animation-timing-function: cubic-bezier(0.1, 0.3, 0.3, 1);
+        filter: invert(100%);
+    }
+
+    75% {
+        transform: rotate(-20deg) translateY(-30px);
+        animation-timing-function: cubic-bezier(0.7, 0.0, 0.9, 0.7);
+        filter: invert(0%);
+    }
+
+    to {
+        transform: rotate(0deg) translateY(-30px);
+        filter: invert(100%);
+    }
+}
+
+@keyframes chorrazo {
     0% {
-        transform: rotate(-20deg)
+        transform: scale(30%);
     }
-    100% {
-        transform: rotate(20deg)
-    }
-}
 
-@keyframes animaciontranslation {
-    0% {
-        transform: translateX(-100px)
-    }
     100% {
-        transform: translateX(100px)
+        transform: scale(1000%);
+        display: none;
     }
 }
