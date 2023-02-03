@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE perifericos [
+ <!ELEMENT perifericos (periferico+)>
+<!ELEMENT periferico (#PCDATA)> 
+]>
 
 <!-- Ejercicio 1: El siguiente documento XML ("perifericos.xml") está bien formado. Sin embargo, no es válido.
 Para que lo  sea, realizar los cambios necesarios en dicho documento, pero sin modificar la DTD interna. 
@@ -14,13 +18,4 @@ Para que lo  sea, realizar los cambios necesarios en dicho documento, pero sin m
 </perifericos> 
 -->
 
-
-<!DOCTYPE perifericos [
- <!ELEMENT perifericos (periferico+)>
-<!ELEMENT periferico (#PCDATA)> 
-]>
-<perifericos>
-    <periferico>impresora</periferico>
-    <periferico>monitor</periferico>
-    <periferico>teclado</periferico>
-</perifericos>
+<perifericos>impresora monitor teclado</perifericos>

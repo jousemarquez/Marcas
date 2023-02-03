@@ -17,13 +17,8 @@ Para que lo sea,  realizar los cambios necesarios en dicho documento, pero sin m
  <!ELEMENT color (#PCDATA)> 
 ]> 
 <mesa>La mesa de <material>madera es de color  
-<color>marrón</color></material>.</mesa> 
+<color>marrón</color></material>.</mesa>
 -->
 
-
-<mesa>
- <material>madera</material>
- <color>marrón</color>
-</mesa>
-
-
+<mesa>La mesa de <material>madera es de color  
+<color>marrón</color></material>.</mesa>

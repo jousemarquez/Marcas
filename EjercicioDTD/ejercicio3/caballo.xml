@@ -22,9 +22,8 @@ Para que lo sea,  realizar los cambios necesarios en dicho documento, pero sin m
 </caballo>
 -->
 
-
 <caballo> 
  <nombre>Silvestre</nombre> 
  <raza>Morgan</raza> 
- <edad /> 
+ <edad/> 
 </caballo>

@@ -38,6 +38,6 @@ Para que lo sea,  realizar los cambios necesarios en dicho documento, pero sin m
         <ciudad>Venecia</ciudad>
     </italia>
     <francia>
-        <ciudad></ciudad>
+        <ciudad/>
     </francia>
 </viajes>
