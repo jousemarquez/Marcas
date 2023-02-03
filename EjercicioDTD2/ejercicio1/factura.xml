@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE factura [
-<!--Lista de elementos-->
+
 <!ELEMENT factura (cabecera, datos_cliente, datos_factura, pie)>
+<!ATTLIST factura numero CDATA #REQUIRED>
 <!ELEMENT cabecera (nombre, direccion, cif, telefono, cabecera2)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT direccion (#PCDATA)>
 <!ELEMENT cif (#PCDATA)>
 <!ELEMENT telefono (#PCDATA)>
+<!ATTLIST telefono num_tel CDATA #FIXED "917776688">
 <!ELEMENT cabecera2 (fecha, pedido, forma_de_pago)>
 <!ELEMENT fecha (#PCDATA)>
 <!ELEMENT pedido (#PCDATA)>
 <!ELEMENT forma_de_pago (#PCDATA)>
+<!ATTLIST datos_factura f_pago (efectivo|tarjeta|plazos) #REQUIRED>
 <!ELEMENT datos_cliente (nombre, direccion, codigo_postal, poblacion)>
+<!ATTLIST datos_cliente n_cli ID #REQUIRED>
+<!ATTLIST datos_cliente numero CDATA #REQUIRED>
+<!ATTLIST datos_factura n_ped ID #REQUIRED>
 <!ELEMENT codigo_postal (#PCDATA)>
 <!ELEMENT poblacion (#PCDATA)>
+<!ATTLIST poblacion cod_postal CDATA "">
 <!ELEMENT datos_factura (linea+)>
 <!ELEMENT linea (referencia, descripcion, cantidad, precio, iva, importe)>
 <!ELEMENT referencia (#PCDATA)>
@@ -21,25 +28,14 @@
 <!ELEMENT cantidad (#PCDATA)>
 <!ELEMENT precio (#PCDATA)>
 <!ELEMENT iva (#PCDATA)>
+<!ATTLIST datos_factura iva NMTOKEN #REQUIRED>
 <!ELEMENT importe (#PCDATA)>
+<!ATTLIST datos_factura moneda CDATA #FIXED "euro">
 <!ELEMENT pie (base_imponible, total_IVA, cuota_IVA)>
 <!ELEMENT base_imponible (#PCDATA)>
 <!ELEMENT total_IVA (#PCDATA)>
 <!ELEMENT cuota_IVA (#PCDATA)>
-<!--Lista de atributos-->
-<!ATTLIST factura numero CDATA #REQUIRED>
-<!ATTLIST factura n_fac ID #REQUIRED>
-<!ATTLIST datos_cliente numero CDATA #REQUIRED>
-<!ATTLIST telefono num_tel CDATA #FIXED "917776688">
-<!ATTLIST fax num_fax CDATA #FIXED "917776699">
-<!ATTLIST datos_cliente n_cli ID #REQUIRED>
-<!ATTLIST datos_factura n_ped ID #REQUIRED>
-<!ATTLIST datos_factura iva NMTOKEN #REQUIRED>
-<!ATTLIST datos_factura f_pago (efectivo|tarjeta|plazos) #REQUIRED>
-<!ATTLIST datos_factura moneda CDATA #FIXED "euro">
-<!ATTLIST poblacion cod_postal CDATA "">
 ]>
-
 
 <factura numero="9999">
 	<cabecera>
