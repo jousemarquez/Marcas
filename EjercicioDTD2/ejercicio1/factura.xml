@@ -1,26 +1,27 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE factura [
-
 <!ELEMENT factura (cabecera, datos_cliente, datos_factura, pie)>
 <!ATTLIST factura numero CDATA #REQUIRED>
+
 <!ELEMENT cabecera (nombre, direccion, cif, telefono, cabecera2)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT direccion (#PCDATA)>
 <!ELEMENT cif (#PCDATA)>
 <!ELEMENT telefono (#PCDATA)>
-<!ATTLIST telefono num_tel CDATA #FIXED "917776688">
+<!ATTLIST telefono num_tel CDATA #IMPLIED>
+
 <!ELEMENT cabecera2 (fecha, pedido, forma_de_pago)>
 <!ELEMENT fecha (#PCDATA)>
 <!ELEMENT pedido (#PCDATA)>
 <!ELEMENT forma_de_pago (#PCDATA)>
-<!ATTLIST datos_factura f_pago (efectivo|tarjeta|plazos) #REQUIRED>
+<!ATTLIST forma_de_pago f_pago (efectivo|tarjeta|plazos) #REQUIRED>
+
 <!ELEMENT datos_cliente (nombre, direccion, codigo_postal, poblacion)>
-<!ATTLIST datos_cliente n_cli ID #REQUIRED>
-<!ATTLIST datos_cliente numero CDATA #REQUIRED>
-<!ATTLIST datos_factura n_ped ID #REQUIRED>
+<!ATTLIST datos_cliente numero ID #REQUIRED>
 <!ELEMENT codigo_postal (#PCDATA)>
 <!ELEMENT poblacion (#PCDATA)>
-<!ATTLIST poblacion cod_postal CDATA "">
+<!ATTLIST poblacion cod_postal CDATA #IMPLIED>
+
 <!ELEMENT datos_factura (linea+)>
 <!ELEMENT linea (referencia, descripcion, cantidad, precio, iva, importe)>
 <!ELEMENT referencia (#PCDATA)>
@@ -28,9 +29,10 @@
 <!ELEMENT cantidad (#PCDATA)>
 <!ELEMENT precio (#PCDATA)>
 <!ELEMENT iva (#PCDATA)>
-<!ATTLIST datos_factura iva NMTOKEN #REQUIRED>
+
 <!ELEMENT importe (#PCDATA)>
-<!ATTLIST datos_factura moneda CDATA #FIXED "euro">
+<!ATTLIST datos_factura moneda CDATA #IMPLIED>
+
 <!ELEMENT pie (base_imponible, total_IVA, cuota_IVA)>
 <!ELEMENT base_imponible (#PCDATA)>
 <!ELEMENT total_IVA (#PCDATA)>
@@ -46,7 +48,7 @@
 		<cabecera2>
 			<fecha>21-05-2019</fecha>
 			<pedido>123455</pedido>
-			<forma_de_pago>Efectivo</forma_de_pago>
+			<forma_de_pago f_pago= "efectivo">Efectivo</forma_de_pago>
 		</cabecera2>
 	</cabecera>
 	<datos_cliente numero="12345">
@@ -54,8 +56,8 @@
 		<direccion>Avda. de Oporto 48</direccion>
 		<codigo_postal>28043</codigo_postal>
 		<poblacion>Madrid</poblacion>
-
 	</datos_cliente>
+
 	<datos_factura>
 		<linea>
 			<referencia>MII9300675</referencia>
