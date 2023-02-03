@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE factura [
+<!--Lista de elementos-->
+<!ELEMENT factura (cabecera, datos_cliente, datos_factura, pie)>
+<!ELEMENT cabecera (nombre, direccion, cif, telefono, cabecera2)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT cabecera2 (fecha, pedido, forma_de_pago)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT pedido (#PCDATA)>
+<!ELEMENT forma_de_pago (#PCDATA)>
+<!ELEMENT datos_cliente (nombre, direccion, codigo_postal, poblacion)>
+<!ELEMENT codigo_postal (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT datos_factura (linea+)>
+<!ELEMENT linea (referencia, descripcion, cantidad, precio, iva, importe)>
+<!ELEMENT referencia (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT iva (#PCDATA)>
+<!ELEMENT importe (#PCDATA)>
+<!ELEMENT pie (base_imponible, total_IVA, cuota_IVA)>
+<!ELEMENT base_imponible (#PCDATA)>
+<!ELEMENT total_IVA (#PCDATA)>
+<!ELEMENT cuota_IVA (#PCDATA)>
+<!--Lista de atributos-->
+<!ATTLIST factura numero CDATA #REQUIRED>
+<!ATTLIST factura n_fac ID #REQUIRED>
+<!ATTLIST datos_cliente numero CDATA #REQUIRED>
+<!ATTLIST telefono num_tel CDATA #FIXED "917776688">
+<!ATTLIST fax num_fax CDATA #FIXED "917776699">
+<!ATTLIST datos_cliente n_cli ID #REQUIRED>
+<!ATTLIST datos_factura n_ped ID #REQUIRED>
+<!ATTLIST datos_factura iva NMTOKEN #REQUIRED>
+<!ATTLIST datos_factura f_pago (efectivo|tarjeta|plazos) #REQUIRED>
+<!ATTLIST datos_factura moneda CDATA #FIXED "euro">
+<!ATTLIST poblacion cod_postal CDATA "">
+]>
+
+
+<factura numero="9999">
+	<cabecera>
+		<nombre> Equipos Digitales S.L.</nombre>
+		<direccion>Avda, de la paz numero 21</direccion>
+		<cif>b-90467890</cif>
+		<telefono>654789911</telefono>
+		<cabecera2>
+			<fecha>21-05-2019</fecha>
+			<pedido>123455</pedido>
+			<forma_de_pago>Efectivo</forma_de_pago>
+		</cabecera2>
+	</cabecera>
+	<datos_cliente numero="12345">
+		<nombre>Dario Bueno</nombre>
+		<direccion>Avda. de Oporto 48</direccion>
+		<codigo_postal>28043</codigo_postal>
+		<poblacion>Madrid</poblacion>
+
+	</datos_cliente>
+	<datos_factura>
+		<linea>
+			<referencia>MII9300675</referencia>
+			<descripcion>Micro Pentiun IV</descripcion>
+			<cantidad>1</cantidad>
+			<precio>230</precio>
+			<iva>16</iva>
+			<importe>266,80</importe>
+		</linea>
+		<linea>
+			<referencia>MBQD99</referencia>
+			<descripcion>Placa Base</descripcion>
+			<cantidad>1</cantidad>
+			<precio>180</precio>
+			<iva>16</iva>
+			<importe>208,80</importe>
+		</linea>
+		<linea>
+			<referencia>HD250887</referencia>
+			<descripcion>Disco Duro</descripcion>
+			<cantidad>4</cantidad>
+			<precio>120</precio>
+			<iva>16</iva>
+			<importe>556,80</importe>
+		</linea>
+	</datos_factura>
+	<pie>
+		<base_imponible>667</base_imponible>
+		<total_IVA>422</total_IVA>
+		<cuota_IVA>16</cuota_IVA>
+	</pie>
+</factura>
