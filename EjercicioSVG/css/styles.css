@@ -1,0 +1,119 @@
+/*  
+    Práctica con SVG
+    ================
+    Asignatura: Lenguajes de Marca
+    Ejercicio: OPCIONAL: Como usar gráficos SVG
+    Autor: https://github.com/jousemarquez
+    */
+
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700);
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;;
+    align-items: center;
+    margin: auto;
+    padding-top: 10px;
+}
+h2 {
+    color: black;
+    font-size: 1em;
+    font-weight: 400;
+    align-items: center;
+    margin: auto;
+    padding-top: 10px;
+}
+p {
+    color: white;
+}
+header {
+    background-color: #14151b;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    position: fixed;
+    z-index: 1;
+}
+body {
+    background-color: #727272;
+    background-image: repeating-linear-gradient(-45deg, #6a6a6a 0, #6a6a6a 2px, #727272 2px, #727272 11px);
+    background-size: 16px 16px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.imagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2em;
+    margin: 5%;
+}
+.imagenes div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.imagenes div img {
+    width: auto;
+    height: 100px;
+    border-radius: 100%;
+}
+.card {
+    background-color: white;
+    width: 300px;
+    height: 280px;
+    transition: all 0.3s ease;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.281);
+    border-radius: 15px 15px 15px 15px;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.img {
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+.container__img {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    scale: 120%;
+    object-fit: fill;
+}
+footer {
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    background-color: #14151b;
+    text-align: center;
+    position: absolute;
+    position: fixed
+}
+footer p {
+    color: white;
+}
+footer a {
+    color: #dbfb66;
+    text-decoration: none;
+}
