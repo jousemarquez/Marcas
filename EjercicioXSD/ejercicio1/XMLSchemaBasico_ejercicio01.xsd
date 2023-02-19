@@ -1,0 +1,39 @@
+<!-- 
+    - El elemento número será un entero entre 0 y 500.
+    - El elemento teléfono será un entero y dicho elemento podrá aparecer entre 0 y 5 veces.
+    - El atributo dni será una plantilla de 8 números y una letra mayúscula.-->
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="alumno">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="direccion">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="calle" type="xs:string"/>
+                            <xs:element name="numero">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="0"/>
+                                        <xs:maxInclusive value="500"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="ciudad" type="xs:string"/>
+                            <xs:element name="provincia" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="telefono" type="xs:integer" maxOccurs="5"/>
+            </xs:sequence>
+            <xs:attribute name="dni">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="\d{8}[A-Z]"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
