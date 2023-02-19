@@ -1,0 +1,52 @@
+<!--
+Escribir un XML Schema para el siguiente documento XML, e incluir los cambios necesarios en el
+mismo
+para referenciar al esquema creado.
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="matricula">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="personal">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="dni" type="xs:string" minOccurs="1" maxOccurs="1" />
+                            <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="1" />
+                            <xs:element name="titulacion" type="xs:string" minOccurs="1" />
+                            <xs:element name="curso_academico" type="xs:string" minOccurs="1" />
+                            <xs:element name="domicilios">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="domicilio" type="domicilioType"
+                                            maxOccurs="unbounded">
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="pago">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="tipo_matricula" type="xs:string" minOccurs="1"
+                                maxOccurs="1" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Definiendo domicilioType -->
+    <xs:simpleType name="domicilioType" use="required">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="familiar" />
+            <xs:enumeration value="habitual" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

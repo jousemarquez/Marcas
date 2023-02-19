@@ -1,0 +1,45 @@
+<!--
+    - Todos los elementos que aparecen en el documento instancia de abajo son obligatorios y deben
+    aparecer siempre en el mismo orden.
+    -  Se deben definir dos tipos de datos, “tipoPersona” (los elementos “persona” son de este tipo)
+    “info” (los elementos “datos” son de este tipo).
+    - El atributo “nacimiento” es de tipo “date”.
+    - El elemento “comentario” no es obligatorio; si aparece lo hace sólo 1 vez.
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Estructura base -->
+    <xs:simpleType name="tipoPersona">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string" />
+                <xs:element name="apellidos" type="xs:string" />
+                <xs:element name="dni" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:simpleType>
+
+    <!-- Definiendo persona -->
+    <xs:element name="persona">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="datos" type="info" />
+                <xs:element name="comentario" type="xs:string" minOccurs="0" maxOccurs="0" />
+            </xs:sequence>
+            <xs:attribute name="nacimiento" type="date" use="required" />
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Deinifiendo date -->
+    <xs:simpleType name="date">
+        <xs:restriction base="xs:date" />
+    </xs:simpleType>
+    
+    <!-- Definiendo info -->
+    <xs:simpleType name="info">
+        <xs:restriction base="xs:string" />
+    </xs:simpleType>
+
+</xs:schema>

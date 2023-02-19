@@ -1,17 +1,18 @@
-<!-- Escribir un XML Schema para el siguiente documento XML, e incluir los cambios necesarios en el mismo
+<!-- Escribir un XML Schema para el siguiente documento XML, e incluir los cambios necesarios en el
+mismo
 para referenciar al esquema creado. Se sabe que todos los elementos hijos del elemento “nota” son
 obligatorios y deben aparecer sólo una vez. -->
 
-<?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="nota">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name"para" type="xs:string"/>
-                <xs:element name"de" type="xs:string"/>
-                <xs:element name"titulo" type="xs:string"/>
-                <xs:element name"contenido" type="xs:string"/>
+                <xs:element name="para" type="xs:string" />
+                <xs:element name="de" type="xs:string" />
+                <xs:element name="titulo" type="xs:string" />
+                <xs:element name="contenido" type="xs:string" />
             </xs:sequence>
         </xs:complexType>
-    </xs:elements>
+    </xs:element>
 </xs:schema>
