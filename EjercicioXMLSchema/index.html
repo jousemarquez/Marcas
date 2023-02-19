@@ -4,15 +4,14 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="title" content="Relación de ejercicios XML" />
-    <meta name="description" content="Prácticas básicas con documentos XML." />
-    <meta name="keywords" content="xml, css">
+    <meta name="title" content="Relación de ejercicios XDS" />
+    <meta name="description" content="Prácticas básicas con documentos XML y XML Schema." />
+    <meta name="keywords" content="xml, css, xsd">
     <meta name="language" content="es_ES">
     <meta name="author" content="joseantonio.marquez@a.vedrunasevillasj.es">
-    <meta name="revised" content="Lunes, 16 de Enero de 2023, 4:00pm">
+    <meta name="revised" content="Lunes, 19 de Febrero de 2023, 4:00pm">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
-    <meta http-equiv="refresh" content="300" ; URL="index.html">
     <meta name="robots" content="INDEX,FOLLOW" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
 
@@ -25,11 +24,11 @@
     <main>
         <ol>
             <li>
-                <p>Escribir un documento XML que almacene la siguiente información:</p>
-                <img src="img/Screenshot 2023-01-16 at 18.06.18.png" alt="Ejercicio 1">
-                <h5>Nota: El continente al que pertenecen un país hay que representarlo mediante un atributo, el resto
-                    de información no.</h5>
-                <a href="ejercicio1/ejercicio1.xml">Ver resolución</a>
+                <p>Escribir un XML Schema para el siguiente documento XML, e incluir los cambios necesarios en el mismo
+                    para referenciar al esquema creado. Se sabe que todos los elementos hijos del elemento “nota” son
+                    obligatorios y deben aparecer sólo una vez.</p>
+                <img src="img/ejercicio1.png" alt="Ejercicio 1">
+                <a href="ejercicio1/XMLSchemaBasico_ejercicio01.xsd">Ver resolución</a>
             </li>
             <li>
                 <p>Marcar con XML el siguiente texto de manera que el marcado posibilite las búsquedas de
@@ -39,34 +38,23 @@
 
                 <p><em>"Pedido para el señor Juan Delgado Martínez. El pedido se compone de una bicicleta A2023. A
                         entregar en la calle Barco 4, tercer piso, letra A, el día 19-5-2000."</em></p>
-                <a href="ejercicio2/ejercicio2.xml">Ver resolución</a>
+                        <img src="img/ejercicio2.png" alt="Ejercicio 2">
+                <a href="ejercicio2/XMLSchemaBasico_ejercicio02.xsd">Ver resolución</a>
             </li>
             <li>
-                <p>Escribir un documento XML que almacene la siguiente información:</p>
-                <img src="img/Screenshot 2023-01-16 at 18.06.32.png" alt="Ejercicio 3">
+                <p>Escribir un XML Schema para el siguiente documento XML, e incluir los cambios necesarios en el mismo para referenciar al esquema creado. Se debe cumplir también lo siguiente:
+                     Todos los elementos que aparecen en el documento instancia de abajo son obligatorios y deben aparecer siempre en el mismo orden.
+                     Se deben definir dos tipos de datos, “tipoPersona” (los elementos “persona” son de este tipo) “info” (los elementos “datos” son de este tipo).
+                     El atributo “nacimiento” es de tipo “date”.
+                     El elemento “comentario” no es obligatorio; si aparece lo hace sólo 1 vez.</p>
+                <img src="img/ejercicio3.png" alt="Ejercicio 3">
                 <a href="ejercicio3/ejercicio3.xml">Ver resolución</a>
             </li>
             <li>
                 <p>Escribir un documento XML que represente la estructura y los datos que se muestran en el siguiente
                     esquema:</p>
-
-                <p>Completar el contenido del documento para que el texto completo sea el siguiente (tres párrafos en
-                    total):</p>
-                <img src="img/Screenshot 2023-01-16 at 18.06.40.png" alt="Ejercicio 4">
-                <ul>
-                    <li>¿Hola qué tal?</li>
-                    <li>Hace mucho tiempo que no escribes. A ver si llamas y quedamos pronto.</li>
-                    <li>Un saludo.</li>
-                </ul>
-
-                <a href="ejercicio4/ejercicio4.xml">Ver resolución</a>
-            </li>
-            <li>
-                <p>Realizar un documento XML, y un CSS vinculado, que dé como resultado esta imagen:</p>
-                <img src="img/Screenshot 2023-01-16 at 18.06.46.png" alt="Ejercicio 5">
-                <h5>Nota: el numero en rojo corresponde al número de patas que tiene cada animal.</h5>
-                <a href="ejercicio5/ejercicio5.xml">Ver resolución</a>
-            </li>
+                <img src="img/ejercicio4.png" alt="Ejercicio 4">
+                <a href="ejercicio4/matricula.xsd">Ver resolución</a>
         </ol>
     </main>
     <footer>
