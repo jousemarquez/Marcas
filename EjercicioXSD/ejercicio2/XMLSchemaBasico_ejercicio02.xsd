@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
   - La librería tiene obligatoriamente un código, una dirección, un teléfono,
         un propietario, y uno o más libros.
@@ -9,8 +10,6 @@
         publicación, precio, cantidad.
     - El formato podrá ser rústica, tapa blanda o tapa dura.
 -->
-
-<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <!-- Estructura base -->
@@ -50,7 +49,7 @@
     <xs:restriction base="xs:integer">
       <xs:pattern value="[0-9]{4}" />
       <xs:minInclusive value="1000" />
-      <xs:maxInclusive value="9999" />
+      <xs:maxInclusive value="9999" /> 
     </xs:restriction>
   </xs:simpleType>
 
