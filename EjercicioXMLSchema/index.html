@@ -22,40 +22,55 @@
         <h1>Menú XML</h1>
     </header>
     <main>
-        <ol>
-            <li>
+        <div id="container">
+            <div class="item">
+                <h2>Ejercicio 1</h2>
                 <p>Escribir un XML Schema para el siguiente documento XML, e incluir los cambios necesarios en el mismo
                     para referenciar al esquema creado. Se sabe que todos los elementos hijos del elemento “nota” son
                     obligatorios y deben aparecer sólo una vez.</p>
                 <img src="img/ejercicio1.png" alt="Ejercicio 1">
-                <a href="ejercicio1/XMLSchemaBasico_ejercicio01.xsd">Ver resolución</a>
-            </li>
-            <li>
-                <p>Marcar con XML el siguiente texto de manera que el marcado posibilite las búsquedas de
-                    información según los siguientes campos: <strong>destinatario del pedido, artículo pedido, dirección
-                        de
-                        entrega, fecha de entrega.</strong></p>
-
-                <p><em>"Pedido para el señor Juan Delgado Martínez. El pedido se compone de una bicicleta A2023. A
-                        entregar en la calle Barco 4, tercer piso, letra A, el día 19-5-2000."</em></p>
-                        <img src="img/ejercicio2.png" alt="Ejercicio 2">
-                <a href="ejercicio2/XMLSchemaBasico_ejercicio02.xsd">Ver resolución</a>
-            </li>
-            <li>
-                <p>Escribir un XML Schema para el siguiente documento XML, e incluir los cambios necesarios en el mismo para referenciar al esquema creado. Se debe cumplir también lo siguiente:
-                     Todos los elementos que aparecen en el documento instancia de abajo son obligatorios y deben aparecer siempre en el mismo orden.
-                     Se deben definir dos tipos de datos, “tipoPersona” (los elementos “persona” son de este tipo) “info” (los elementos “datos” son de este tipo).
-                     El atributo “nacimiento” es de tipo “date”.
-                     El elemento “comentario” no es obligatorio; si aparece lo hace sólo 1 vez.</p>
+                <button class="button"><a href="ejercicio1/XMLSchemaBasico_ejercicio01.xsd">Ver resolución</a></button>
+            </div>
+            <div class="item">
+                <h2>Ejercicio 2</h2>
+                <p>Escribir un XML Schema para el siguiente documento XML, e incluir los cambios necesarios en el mismo
+                    para referenciar al esquema creado. Se debe cumplir también lo siguiente:
+                <ol>
+                    <li>Los elementos “vehículo”, “nombre” y “modificacion” deben aparecer mínimo una vez, y el máximo
+                        no está limitado. El resto de los elementos deben aparecer 1 vez.</li>
+                    <li>Todos los elementos que aparecen en el documento instancia de abajo son obligatorios y deben
+                        aparecer siempre en el mismo orden.</li>
+                    <li>Los elementos que contienen información de fecha son todos de tipo cadena.</li>
+                </ol>
+                </p>
+                <img src="img/ejercicio2.png" alt="Ejercicio 2">
+                <button class="button"><a href="ejercicio2/XMLSchemaBasico_ejercicio02.xsd">Ver resolución</a></button>
+            </div>
+            <div class="item">
+                <h2>Ejercicio 3</h2>
+                <p>Escribir un XML Schema para el siguiente documento XML, e incluir los cambios necesarios en el mismo
+                    para referenciar al esquema creado. Se debe cumplir también lo siguiente:
+                <ol>
+                    <li>Todos los elementos que aparecen en el documento instancia de abajo son obligatorios y deben
+                        aparecer siempre en el mismo orden.</li>
+                    <li>Se deben definir dos tipos de datos, “tipoPersona” (los elementos “persona” son de este tipo)
+                        “info” (los elementos “datos” son de este tipo).</li>
+                    <li>El atributo “nacimiento” es de tipo “date”.</li>
+                    <li>El elemento “comentario” no es obligatorio; si aparece lo hace sólo 1 vez.</li>
+                </ol>
+                </p>
                 <img src="img/ejercicio3.png" alt="Ejercicio 3">
-                <a href="ejercicio3/ejercicio3.xml">Ver resolución</a>
-            </li>
-            <li>
-                <p>Escribir un documento XML que represente la estructura y los datos que se muestran en el siguiente
-                    esquema:</p>
+                <button class="button"><a href="ejercicio3/XMLSchemaBasico_ejercicio03.xsd">Ver resolución</a></button>
+            </div>
+            <div class="item">
+                <h2>Ejercicio 4</h2>
+                <p>Escribir un XML Schema para el siguiente documento XML, e incluir los cambios necesarios en el mismo
+                    para referenciar al esquema creado.
+                </p>
                 <img src="img/ejercicio4.png" alt="Ejercicio 4">
-                <a href="ejercicio4/matricula.xsd">Ver resolución</a>
-        </ol>
+                <button class="button"><a href="ejercicio4/matricula.xsd">Ver resolución</a></button>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2022 | <a href="https://github.com/jousemarquez">Jouse Márquez</a></p>
