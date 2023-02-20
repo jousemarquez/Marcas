@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
     - Todos los elementos que aparecen en el documento instancia de abajo son obligatorios y deben
     aparecer siempre en el mismo orden.
@@ -6,8 +7,6 @@
     - El atributo “nacimiento” es de tipo “date”.
     - El elemento “comentario” no es obligatorio; si aparece lo hace sólo 1 vez.
 -->
-
-<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
     <!-- Estructura base -->

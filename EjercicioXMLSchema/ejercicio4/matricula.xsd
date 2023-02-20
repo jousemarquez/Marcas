@@ -1,10 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 Escribir un XML Schema para el siguiente documento XML, e incluir los cambios necesarios en el
 mismo
 para referenciar al esquema creado.
 -->
-
-<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
     <xs:element name="matricula">
