@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Libreria>
+    <Libro>
+        <Titulo ISBN= ”4303-12021-43892”>My Life and Times</Titulo>
+        <Autor>Paul McCartney</Autor>
+        <Autor>Phil McCartney</Autor>
+        <Fecha>Julio, 1998</Fecha>
+    </Libro>
+    <Libro>
+        <Titulo ISBN= ”4303-12021-5789”>Reina Roja</Titulo>
+        <Autor>Juan Gomez-Jurado</Autor>
+        <Fecha>Febrero, 2020</Fecha>
+        <Editorial tipo= ”tapa-dura”> Alfaguara </Editorial>
+        <Precio_recomendado>23,99</Precio_recomendado>
+    </Libro>
+    <Libro>
+        <Titulo ISBN= ”4303-12021-5789”>El Principito</Titulo>
+        <Fecha>Abril, 1943</Fecha>
+        <Autor>SAINT-EXUPÉRY,ANTOINE DE</Autor>
+        <Editorial tipo= ”tapa-dura”> Alfaguara </Editorial>
+        <Precio_recomendado>12,99</Precio_recomendado>
+        <Editorial tipo= ”rustica”> Salamandra </Editorial>
+        <Precio_recomendado>7,99</Precio_recomendado>
+    </Libro>
+    <Libro>
+        <Titulo ISBN= ”5103-42321-6779”>Un pueblo traicionado</Titulo>
+        <Autor>Paul Preston</Autor>
+        <Fecha>Junio, 1980</Fecha>
+        <Editorial> Debate </Editorial>
+        <Precio_recomendado>18,50</Precio_recomendado>
+    </Libro>
+</Libreria>

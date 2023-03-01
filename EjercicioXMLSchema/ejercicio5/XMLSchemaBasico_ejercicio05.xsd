@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Escribir un XML Schema para el siguiente documento XML, e incluir los cambios necesarios en el
+mismo
+para referenciar al esquema creado.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Definición del tipo Autor -->
+    <xs:complexType name="tipoAutor">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="id" type="xs:ID" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <!-- Definición del tipo Editorial -->
+    <xs:complexType name="tipoEditorial">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="id" type="xs:ID" />
+                <xs:attribute name="tipo" use="optional">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="tapa-dura" />
+                            <xs:enumeration value="rustica" />
+                            <xs:enumeration value="bolsillo" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <!-- Definición del tipo Libro -->
+    <xs:complexType name="tipoLibro">
+        <xs:sequence>
+            <xs:element name="Titulo" type="xs:string">
+                <xs:unique name="uniqueISBN">
+                    <xs:selector xpath=".//*" />
+                    <xs:field xpath="@ISBN" />
+                </xs:unique>
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="ISBN" type="xs:string" use="required" />
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Autor" type="xs:IDREF" maxOccurs="unbounded" />
+            <xs:element name="Fecha" type="xs:string" />
+            <xs:element name="Editorial" type="xs:IDREF" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="Precio_recomendado" type="xs:decimal" minOccurs="0"
+                maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" />
+    </xs:complexType>
+
+    <!-- Definición del tipo Libreria -->
+    <xs:complexType name="tipoLibreria">
+        <xs:sequence>
+            <xs:element name="Libro" type="tipoLibro" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Definición del elemento raíz -->
+    <xs:element name="Libreria" type="tipoLibreria" />
+
+</xs:schema>
