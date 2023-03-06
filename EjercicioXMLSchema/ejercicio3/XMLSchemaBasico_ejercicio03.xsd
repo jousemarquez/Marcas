@@ -10,7 +10,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
     <!-- Estructura base -->
-    <xs:simpleType name="tipoPersona">
+    <xs:element name="tipoPersona">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="nombre" type="xs:string" />
@@ -18,7 +18,7 @@
                 <xs:element name="dni" type="xs:string" />
             </xs:sequence>
         </xs:complexType>
-    </xs:simpleType>
+    </xs:element>
 
     <!-- Definiendo persona -->
     <xs:element name="persona">
