@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Gimnasio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="clase" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="precio">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:decimal">
+                                            <xs:attribute name="cuota" type="cuotaType"
+                                                use="required">
+                                            </xs:attribute>
+                                            <xs:attribute name="moneda" type="monedaType"
+                                                use="required">
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="plazas" type="xs:positiveInteger" />
+                            <xs:element name="comienzo" type="xs:date" />
+                            <xs:element name="fin" type="xs:date" />
+                            <xs:element name="horario" type="horarioType" />
+                            <xs:element name="profesor" type="profesorType" />
+                            <xs:element name="sala" type="xs:positiveInteger" />
+                        </xs:sequence>
+                        <xs:attribute name="id" type="idType" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <!-- Definiendo idType -->
+    
+        <xs:simpleType name="idType">
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[A-Z]\d{3}" />
+            </xs:restriction>
+        </xs:simpleType>
+
+    <!-- Definiendo horarioType -->
+
+    <xs:simpleType name="horarioType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="M" />
+            <xs:enumeration value="T" />
+            <xs:enumeration value="N" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Definiendo cuotaType -->
+
+    <xs:simpleType name="cuotaType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="mensual" />
+            <xs:enumeration value="bimensual" />
+            <xs:enumeration value="trimestral" />
+            <xs:enumeration value="anual" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Definiendo monedaType:
+    
+    Nota: he indicado varios valores en la moneda para preparar el documento en caso de existir
+    franquicias en los países más relevantes (como UK o USA, y obviamente la zona Euro)-->
+
+    <xs:simpleType name="monedaType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="euro" />
+            <xs:enumeration value="dólar" />
+            <xs:enumeration value="libra" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Definiendo profesorType
+    
+    Nota: he indicado diferentes valores de profesores en caso que el admin de la aplicación quisiera
+mantener los datos
+    existentes de profesorado a vistas de actualizarlo a posteriori con mayor facilidad.-->
+
+    <xs:simpleType name="profesorType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Roberto García" />
+            <xs:enumeration value="Cynthia Carrillo" />
+            <xs:enumeration value="José Limón" />
+            <xs:enumeration value="Daniel López" />
+            <xs:enumeration value="Ana Gallardo" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

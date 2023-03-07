@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EJERCICIO 1: Realizar el esquema XSD-Scheme del XML siguiente, y comprobar que queda
+validado con la herramienta que prefieras.
+Las reglas deberás sacarla analizando cada una de las ocurrencias de la etiqueta clase,
+teniendo en cuenta que al menos debes crear reglas para:
+- El identificador de la clase
+- Precio y cuota
+- Horario
+- Fecha
+Y Explica cuáles son los tipos de datos que has creado y porqué.-->
+<Gimnasio xsi:noNamespaceSchemaLocation="ejercicio3.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema">
+    <clase id="X123">
+        <nombre>Pilates</nombre>
+        <precio cuota="mensual" moneda="euro">27</precio>
+        <plazas>20</plazas>
+        <comienzo>1/3/2019</comienzo>
+        <fin>29/06/2019</fin>
+        <horario>M</horario>
+        <profesor>Roberto Garcia</profesor>
+        <sala>1</sala>
+    </clase>
+    <clase id="Z212">
+        <nombre>Pilates</nombre>
+        <precio cuota="trimestral" moneda="euro">27</precio>
+        <plazas>20</plazas>
+        <comienzo>1/3/2019</comienzo>
+        <fin>29/06/2019</fin>
+        <horario>T</horario>
+        <profesor>Cynthia Carrillo</profesor>
+        <sala>1</sala>
+    </clase>
+    <clase id="Z213">
+        <nombre>Yoga</nombre>
+        <precio cuota="mensual" moneda=" euro">27</precio>
+        <plazas>20</plazas>
+        <comienzo>1/3/2019</comienzo>
+        <fin>29/06/2019</fin>
+        <horario>M</horario>
+        <profesor>Roberto Garcia</profesor>
+        <sala>1</sala>
+    </clase>
+    <clase id="Y122">
+        <horario>T</horario>
+        <profesor>Jose Limon</profesor>
+        <sala>1</sala>
+        <nombre>Yoga</nombre>
+        <precio cuota="anual" moneda=" euro">27</precio>
+        <plazas>20</plazas>
+        <comienzo>1/3/2019</comienzo>
+    </clase>
+    <clase id="Y131">
+        <nombre>Bodybalance</nombre>
+        <precio cuota="mensual" moneda=" euro">27</precio>
+        <plazas>20</plazas>
+        <comienzo>1/3/2019</comienzo>
+        <fin>29/06/2019</fin>
+        <horario>M</horario>
+        <profesor>Roberto Garcia</profesor>
+        <sala>1</sala>
+    </clase>
+    <clase id="X132">
+        <nombre>Bodybalance</nombre>
+        <precio cuota="anual" moneda=" euro">27</precio>
+        <plazas>20</plazas>
+        <comienzo>1/3/2019</comienzo>
+        <horario>T</horario>
+        <profesor>Jose Limon</profesor>
+        <sala>1</sala>
+    </clase>
+    <clase id="Z141">
+        <nombre>Bodycombat</nombre>
+        <precio cuota="bimensual" moneda=" euro">27</precio>
+        <plazas>20</plazas>
+        <comienzo>1/3/2019</comienzo>
+        <fin>29/06/2019</fin>
+        <horario>M</horario>
+        <profesor>Daniel Lopez</profesor>
+        <sala>2</sala>
+    </clase>
+    <clase id="Z142">
+        <nombre>Bodycombat</nombre>
+        <precio cuota="mensual" moneda=" euro">27</precio>
+        <plazas>20</plazas>
+        <horario>T</horario>
+        <profesor>Cynthia Carrillo</profesor>
+        <sala>2</sala>
+        <comienzo>1/3/2019</comienzo>
+        <fin>29/06/2019</fin>
+    </clase>
+    <clase id="X151">
+        <nombre>Bodypump</nombre>
+        <precio cuota="mensual" moneda=" euro">27</precio>
+        <plazas>20</plazas>
+        <comienzo>1/3/2019</comienzo>
+        <fin>29/06/2019</fin>
+        <horario>N</horario>
+        <profesor>Ana Gallardo</profesor>
+        <sala>2</sala>
+    </clase>
+    <clase id="X125">
+        <nombre>Bodypump</nombre>
+        <precio cuota="mensual" moneda=" euro">27</precio>
+        <plazas>20</plazas>
+        <comienzo>1/3/2019</comienzo>
+        <fin>29/06/2019</fin>
+        <horario>N</horario>
+        <profesor>Cynthia Carrillo</profesor>
+        <sala>2</sala>
+    </clase>
+</Gimnasio>
