@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="pokemon.xsl"?>
+<equipoPokemon>
+  <pokemon>
+    <mote nombre="Hitmonlee">Blue Jeans</mote>
+    <capturadoPor id="57604">Joaquin</capturadoPor>
+    <fechaCaptura año="2001"/>
+    <img src="media/hitmonlee.jpg"></img>
+  </pokemon>
+  <pokemon>
+    <mote nombre="Muk">Isabel</mote>
+    <capturadoPor id="12345">Armando</capturadoPor>
+    <fechaCaptura año="2002"/>
+    <img src="media/muk.jpg"></img>
+  </pokemon>
+  <pokemon>
+    <mote nombre="Gengar">Babero</mote>
+    <capturadoPor id="57604">Joaquin</capturadoPor>
+    <fechaCaptura año="2003"/>
+    <img src="media/gengar.jpg"></img>
+  </pokemon>
+  <pokemon>
+    <mote nombre="Salamence">Hipoteca</mote>
+    <capturadoPor id="57604">Joaquin</capturadoPor>
+    <fechaCaptura año="2004"/>
+    <img src="media/salamence.jpg"></img>
+  </pokemon>
+  <pokemon>
+    <mote nombre="Crobat">Pasajero Herido</mote>
+    <capturadoPor id="12345">Armando</capturadoPor>
+    <fechaCaptura año="2005"/>
+    <img src="media/crobat.jpg"></img>
+  </pokemon>
+  <pokemon>
+    <mote nombre="Metagross">Fly Emirates</mote>
+    <capturadoPor id="57604">Joaquin</capturadoPor>
+    <fechaCaptura año="2006"/>
+    <img src="media/metagross.jpg"></img>
+  </pokemon>
+</equipoPokemon>
