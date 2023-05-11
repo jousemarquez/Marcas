@@ -24,8 +24,8 @@
                 <div class="card" year="{fallecimiento/@lugar}">
                     <img src="{img/@src}" alt="{nombre/@apellido}" />
                     <h2><xsl:value-of select="nombre" /> (<xsl:value-of select="nombre/@apellido" />)</h2>
-                    <ul>
-                        <li>Rango: <xsl:value-of select="rango" /></li>
+                    <h3><xsl:value-of select="rango" /></h3>
+                    <ul>                        
                         <li>Especie: <xsl:value-of select="especie" /></li>
                         <li>Género: <xsl:value-of select="especie/@genero" /></li>
                         <li>Sable láser: <xsl:value-of select="sableLaser/@color" /></li>

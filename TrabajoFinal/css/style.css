@@ -10,7 +10,7 @@ html {
     box-sizing: inherit;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: #fade4b;
 }
 
@@ -85,15 +85,17 @@ li {
     color: white;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
     #cardContainer {
         flex-direction: row;
         justify-content: center;
+        align-items: normal;
         flex-wrap: wrap;
         gap: 20px;
     }
 
     .card {
         width: 30%;
+        flex-grow: 1; /* Para permitir que las cards crezcan y se ajusten en una fila */
     }
 }

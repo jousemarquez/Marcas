@@ -15,7 +15,7 @@
     <rango>Maestro</rango>
     <sableLaser color="Azul" />
     <fallecimiento lugar="Estrella de la muerte I">0 DBY</fallecimiento>
-    <img src="media/kenobi.png"></img>
+    <img src="media/kenobi.jpg"></img>
   </jedi>
   <jedi>
     <nombre apellido="Windu">Mace</nombre>
